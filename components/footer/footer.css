@@ -1,0 +1,443 @@
+/* ==========================================================================
+   OM BOTTLES MFG COMPANY — PROFESSIONAL FOOTER STYLES
+   Palette: Dark Navy Blue (#051B38 / #072B56), Brand Red (#D71920), White (#FFFFFF)
+   Features: 4-Column Responsive Layout, White Card Logo, Copy-to-Clipboard
+   ========================================================================== */
+
+.om-footer {
+  background-color: #051B38;
+  color: #E2E8F0;
+  position: relative;
+  overflow: hidden;
+  font-size: 15px;
+  line-height: 1.6;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Subtle background accentuation */
+.om-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #D71920 50%, transparent);
+}
+
+.om-footer-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 40px 48px 40px;
+  position: relative;
+  z-index: 2;
+}
+
+/* 4-Column Grid */
+.om-footer-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 0.85fr 0.95fr 1.35fr;
+  gap: 48px;
+  margin-bottom: 64px;
+}
+
+/* Column 1: Company Logo Card & Info */
+.om-footer-col-brand {
+  display: flex;
+  flex-direction: column;
+}
+
+/* White background card ensuring logo is 100% visible and punchy */
+.om-footer-logo-card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #FFFFFF;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-bottom: 22px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  width: fit-content;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.om-footer-logo-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.om-footer-logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.om-footer-intro {
+  font-size: 14.5px;
+  line-height: 1.68;
+  color: #94A3B8;
+  margin-bottom: 24px;
+  max-width: 360px;
+}
+
+/* Social Media Icons */
+.om-footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.om-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  color: #E2E8F0;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.om-social-link:hover {
+  background-color: var(--color-brand-red, #D71920);
+  border-color: var(--color-brand-red, #D71920);
+  color: #FFFFFF;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 14px rgba(215, 25, 32, 0.4);
+}
+
+.om-social-link svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Footer Section Headings */
+.om-footer-title {
+  font-size: 18px;
+  font-weight: 750;
+  color: #FFFFFF;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
+  position: relative;
+  display: inline-block;
+}
+
+.om-footer-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 28px;
+  height: 2.5px;
+  background-color: var(--color-brand-red, #D71920);
+  border-radius: 2px;
+}
+
+/* Links Lists (Columns 2 & 3) */
+.om-footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.om-footer-link-item a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #94A3B8;
+  text-decoration: none;
+  font-size: 14.5px;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.om-footer-link-item a::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: rgba(215, 25, 32, 0.7);
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.om-footer-link-item a:hover {
+  color: #FFFFFF;
+  transform: translateX(4px);
+}
+
+.om-footer-link-item a:hover::before {
+  background-color: var(--color-brand-red, #D71920);
+  transform: scale(1.4);
+}
+
+/* Column 4: Contact Information */
+.om-footer-contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.om-footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: #94A3B8;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.om-contact-icon-wrap {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--color-brand-red, #D71920);
+  margin-top: 2px;
+}
+
+.om-contact-icon-wrap svg {
+  width: 16px;
+  height: 16px;
+}
+
+.om-contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex-grow: 1;
+}
+
+.om-contact-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #CBD5E1;
+}
+
+.om-contact-value {
+  color: #E2E8F0;
+  text-decoration: none;
+  transition: color 0.25s ease;
+  word-break: break-word;
+}
+
+.om-contact-value:hover {
+  color: var(--color-brand-red, #D71920);
+}
+
+.om-contact-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Copy to clipboard button */
+.om-btn-copy {
+  background: none;
+  border: none;
+  padding: 3px;
+  color: #94A3B8;
+  cursor: pointer;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease, transform 0.2s ease;
+  position: relative;
+}
+
+.om-btn-copy:hover {
+  color: #FFFFFF;
+  transform: scale(1.15);
+}
+
+.om-btn-copy svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Copy Tooltip */
+.om-btn-copy::after {
+  content: 'Copy';
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #072B56;
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 7px;
+  border-radius: 3px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.om-btn-copy:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.om-btn-copy.copied::after {
+  content: 'Copied!';
+  background-color: var(--color-brand-red, #D71920);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Directions link */
+.om-directions-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--color-brand-red, #D71920);
+  text-decoration: none;
+  margin-top: 4px;
+  transition: color 0.2s ease;
+}
+
+.om-directions-link:hover {
+  color: #FF5A60;
+  text-decoration: underline;
+}
+
+.om-directions-link svg {
+  width: 13px;
+  height: 13px;
+}
+
+/* WhatsApp chat inline tag */
+.om-whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #25D366;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13.5px;
+  transition: color 0.2s ease;
+}
+
+.om-whatsapp-link:hover {
+  color: #48E885;
+}
+
+.om-whatsapp-link svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+}
+
+/* ==========================================================================
+   FOOTER BOTTOM BAR (COPYRIGHT & ATTRIBUTION)
+   ========================================================================== */
+.om-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 24px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 13.5px;
+  color: #64748B;
+}
+
+.om-footer-copyright {
+  color: #94A3B8;
+}
+
+.om-footer-bottom-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.om-footer-bottom-links a {
+  color: #94A3B8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.om-footer-bottom-links a:hover {
+  color: #FFFFFF;
+}
+
+/* ==========================================================================
+   RESPONSIVE FOOTER LAYOUT
+   ========================================================================== */
+
+/* Laptop screens (1024px to 1280px) */
+@media (max-width: 1280px) {
+  .om-footer-grid {
+    grid-template-columns: 1.25fr 0.8fr 0.9fr 1.3fr;
+    gap: 36px;
+  }
+}
+
+/* Tablet screens (768px to 1023px) — 2x2 Grid */
+@media (max-width: 1023px) {
+  .om-footer-container {
+    padding: 64px 30px 40px 30px;
+  }
+
+  .om-footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 32px;
+    margin-bottom: 48px;
+  }
+}
+
+/* Mobile screens (under 768px) — Stacked 1 Column */
+@media (max-width: 767px) {
+  .om-footer-container {
+    padding: 56px 20px 36px 20px;
+  }
+
+  .om-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 38px;
+    margin-bottom: 40px;
+  }
+
+  .om-footer-logo-card {
+    padding: 10px 16px;
+  }
+
+  .om-footer-logo-img {
+    height: 42px;
+  }
+
+  .om-footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+}

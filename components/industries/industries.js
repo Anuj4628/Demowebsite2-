@@ -69,3 +69,4 @@ if (document.readyState === 'loading') {
 } else {
   initIndustriesSlider();
 }
+
