@@ -1,0 +1,533 @@
+/* ==========================================================================
+   OM BOTTLES MFG COMPANY — HERO SECTION STYLES
+   Split Layout, 3 High-Impact Industrial Slides, Cross-fade Transitions
+   ========================================================================== */
+
+.om-hero {
+  position: relative;
+  width: 100%;
+  min-height: 640px;
+  max-height: 760px;
+  height: calc(100vh - var(--navbar-height-desktop, 88px));
+  background-color: var(--color-white, #FFFFFF);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Slide Wrapper & Track */
+.om-hero-slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.om-hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+              visibility 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+}
+
+.om-hero-slide.is-active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+/* Background Variations per Slide */
+.om-slide-1 {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 50%, #F1F5F9 100%);
+}
+
+.om-slide-2 {
+  background: linear-gradient(135deg, #F0F6FC 0%, #E8F1FA 50%, #FFFFFF 100%);
+}
+
+.om-slide-3 {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F3F7FA 60%, #E9F1F8 100%);
+}
+
+/* Slide Container */
+.om-hero-container {
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+  gap: 48px;
+  position: relative;
+}
+
+/* Slide 2: Inverted Grid (Image on Left, Content on Right) */
+.om-slide-reverse .om-hero-container {
+  grid-template-columns: 1.2fr 1fr;
+}
+
+.om-slide-reverse .om-hero-content {
+  order: 2;
+}
+
+.om-slide-reverse .om-hero-visual {
+  order: 1;
+}
+
+/* ==========================================================================
+   HERO TEXT CONTENT & TYPOGRAPHY
+   ========================================================================== */
+.om-hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 3;
+}
+
+/* Subtle Slide-in Animation when Active */
+.om-hero-slide.is-active .om-hero-content > * {
+  animation: omHeroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.om-hero-slide.is-active .om-hero-badge { animation-delay: 0.1s; }
+.om-hero-slide.is-active .om-hero-title { animation-delay: 0.2s; }
+.om-hero-slide.is-active .om-hero-desc  { animation-delay: 0.3s; }
+.om-hero-slide.is-active .om-hero-actions { animation-delay: 0.4s; }
+
+@keyframes omHeroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Small Industrial Badge / Label */
+.om-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--color-primary-navy, #073B78);
+  margin-bottom: 18px;
+  background-color: rgba(7, 59, 120, 0.06);
+  padding: 6px 14px;
+  border-radius: 4px;
+  border-left: 3px solid var(--color-brand-red, #D71920);
+  width: fit-content;
+}
+
+/* Main Heading */
+.om-hero-title {
+  font-size: clamp(36px, 4.2vw, 56px);
+  font-weight: 800;
+  line-height: 1.15;
+  color: #172B45;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+
+.om-hero-title .highlight-red {
+  color: var(--color-brand-red, #D71920);
+  position: relative;
+  display: inline-block;
+}
+
+/* Description */
+.om-hero-desc {
+  font-size: clamp(16px, 1.2vw, 18px);
+  font-weight: 400;
+  line-height: 1.65;
+  color: #475569;
+  margin-bottom: 34px;
+  max-width: 540px;
+}
+
+/* CTA Action Buttons */
+.om-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Primary Hero CTA (Brand Red) */
+.om-btn-hero-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--color-brand-red, #D71920);
+  color: var(--color-white, #FFFFFF);
+  font-size: 16.5px;
+  font-weight: 600;
+  padding: 15px 32px;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(215, 25, 32, 0.28);
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.om-btn-hero-primary:hover {
+  background-color: #BF1319;
+  box-shadow: 0 6px 22px rgba(215, 25, 32, 0.38);
+  transform: translateY(-2px);
+}
+
+.om-btn-hero-primary svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.25s ease;
+}
+
+.om-btn-hero-primary:hover svg {
+  transform: translateX(3px);
+}
+
+/* Secondary Hero CTA (Navy Border) */
+.om-btn-hero-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: transparent;
+  color: var(--color-primary-navy, #073B78);
+  font-size: 16.5px;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 6px;
+  border: 1.5px solid var(--color-primary-navy, #073B78);
+  text-decoration: none;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.om-btn-hero-secondary:hover {
+  background-color: rgba(7, 59, 120, 0.05);
+  color: #052A56;
+  border-color: #052A56;
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   HERO PRODUCT PHOTOGRAPHY DISPLAY
+   ========================================================================== */
+.om-hero-visual {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 560px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.om-hero-image-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px -12px rgba(7, 59, 120, 0.12),
+              0 2px 8px rgba(7, 59, 120, 0.04);
+  background-color: #FFFFFF;
+}
+
+.om-hero-img {
+  width: 100%;
+  height: 100%;
+  max-height: 540px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transform: scale(1.02);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.om-hero-slide.is-active .om-hero-img {
+  transform: scale(1);
+}
+
+/* ==========================================================================
+   SLIDER CONTROLS (ARROWS & PAGINATION)
+   ========================================================================== */
+/* Navigation Arrows */
+.om-slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--color-light-border, #E5E9F0);
+  color: var(--color-primary-navy, #073B78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 4px 16px rgba(7, 59, 120, 0.12);
+  transition: all 0.25s ease;
+}
+
+.om-slider-arrow:hover {
+  background-color: var(--color-brand-red, #D71920);
+  border-color: var(--color-brand-red, #D71920);
+  color: #FFFFFF;
+  box-shadow: 0 6px 20px rgba(215, 25, 32, 0.3);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.om-slider-arrow:active {
+  transform: translateY(-50%) scale(0.96);
+}
+
+.om-slider-arrow svg {
+  width: 22px;
+  height: 22px;
+  stroke-width: 2.4;
+}
+
+.om-arrow-prev {
+  left: 24px;
+}
+
+.om-arrow-next {
+  right: 24px;
+}
+
+/* Slider Pagination Indicators */
+.om-slider-pagination {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 8px 16px;
+  border-radius: 24px;
+  border: 1px solid rgba(229, 233, 240, 0.7);
+  box-shadow: 0 4px 12px rgba(7, 59, 120, 0.08);
+}
+
+.om-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #CBD5E1;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.om-pagination-bullet:hover {
+  background-color: var(--color-primary-navy, #073B78);
+}
+
+.om-pagination-bullet.is-active {
+  width: 32px;
+  background-color: var(--color-brand-red, #D71920);
+  box-shadow: 0 2px 8px rgba(215, 25, 32, 0.35);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN BREAKPOINTS
+   ========================================================================== */
+
+/* Laptop / Small Desktop (1024px to 1280px) */
+@media (max-width: 1280px) {
+  .om-hero {
+    min-height: 580px;
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .om-hero-container {
+    padding: 0 32px;
+    gap: 36px;
+  }
+
+  .om-hero-title {
+    font-size: 42px;
+  }
+
+  .om-hero-desc {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+
+  .om-hero-visual {
+    max-height: 480px;
+  }
+
+  .om-btn-hero-primary {
+    padding: 13px 26px;
+    font-size: 15.5px;
+  }
+
+  .om-btn-hero-secondary {
+    padding: 12px 24px;
+    font-size: 15.5px;
+  }
+}
+
+/* Tablet (768px to 1023px) */
+@media (max-width: 1023px) {
+  .om-hero {
+    min-height: auto;
+    height: auto;
+    padding: 50px 0 60px 0;
+  }
+
+  .om-hero-container {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 0 24px;
+    text-align: center;
+  }
+
+  .om-slide-reverse .om-hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .om-slide-reverse .om-hero-content {
+    order: 1;
+  }
+
+  .om-slide-reverse .om-hero-visual {
+    order: 2;
+  }
+
+  .om-hero-content {
+    align-items: center;
+  }
+
+  .om-hero-badge {
+    margin: 0 auto 16px auto;
+  }
+
+  .om-hero-title {
+    font-size: 38px;
+    max-width: 600px;
+  }
+
+  .om-hero-desc {
+    max-width: 520px;
+    margin: 0 auto 28px auto;
+  }
+
+  .om-hero-actions {
+    justify-content: center;
+  }
+
+  .om-hero-visual {
+    max-height: 420px;
+  }
+
+  .om-hero-image-frame {
+    max-width: 580px;
+    margin: 0 auto;
+  }
+
+  .om-arrow-prev {
+    left: 12px;
+  }
+
+  .om-arrow-next {
+    right: 12px;
+  }
+
+  .om-slider-arrow {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* Mobile Screens (Under 768px) */
+@media (max-width: 767px) {
+  .om-hero {
+    padding: 30px 0 54px 0;
+  }
+
+  .om-hero-container {
+    padding: 0 16px;
+    gap: 28px;
+  }
+
+  .om-hero-title {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 14px;
+  }
+
+  .om-hero-badge {
+    font-size: 11.5px;
+    padding: 5px 12px;
+    margin-bottom: 12px;
+  }
+
+  .om-hero-desc {
+    font-size: 15px;
+    line-height: 1.55;
+    margin-bottom: 24px;
+  }
+
+  .om-hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .om-btn-hero-primary,
+  .om-btn-hero-secondary {
+    width: 100%;
+    padding: 13px 20px;
+    font-size: 15.5px;
+  }
+
+  .om-hero-visual {
+    max-height: 320px;
+  }
+
+  .om-slider-arrow {
+    display: none; /* Mobile utilizes pagination indicators and touch gestures */
+  }
+
+  .om-slider-pagination {
+    bottom: 14px;
+    padding: 6px 12px;
+    gap: 8px;
+  }
+
+  .om-pagination-bullet.is-active {
+    width: 24px;
+  }
+}
