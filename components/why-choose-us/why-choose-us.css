@@ -1,0 +1,481 @@
+/* ==========================================================================
+   OM BOTTLES MFG COMPANY — WHY CHOOSE US SECTION STYLES
+   Dominant Palette: Brand Red (#D71920), Deep Navy (#073B78), White (#FFFFFF)
+   Layout: 2-Part Composition (Manufacturing Image Left, 6 Feature Cards Right)
+   ========================================================================== */
+
+.om-why-us-section {
+  position: relative;
+  width: 100%;
+  padding: 104px 0 110px 0;
+  background: linear-gradient(140deg, #BA1419 0%, #D71920 45%, #C2141A 75%, #A81015 100%);
+  color: #FFFFFF;
+  overflow: hidden;
+}
+
+/* Subtle architectural geometry accents on red background */
+.om-why-us-section::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: -80px;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, rgba(7, 59, 120, 0.12) 60%, transparent 100%);
+  pointer-events: none;
+}
+
+.om-why-us-section::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  right: -60px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(7, 59, 120, 0.25) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.om-why-us-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ==========================================================================
+   SECTION HEADER (WHITE ON RED, PROMINENT & HIGH-IMPACT)
+   ========================================================================== */
+.om-why-us-header {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 64px auto;
+}
+
+.om-why-us-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: var(--color-primary-navy, #073B78);
+  padding: 7px 18px;
+  border-radius: 4px;
+  border-left: 3.5px solid #FFFFFF;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.om-why-us-badge::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+
+.om-why-us-title {
+  font-size: clamp(38px, 4vw, 50px);
+  font-weight: 800;
+  line-height: 1.15;
+  color: #FFFFFF;
+  letter-spacing: -0.025em;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+}
+
+.om-why-us-subtitle {
+  font-size: clamp(17px, 1.25vw, 19px);
+  font-weight: 400;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.94);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+/* ==========================================================================
+   MAIN COMPOSITION: 2-PART SPLIT
+   Left: Manufacturing Photography | Right: 6 Feature Cards
+   ========================================================================== */
+.om-why-us-layout {
+  display: grid;
+  grid-template-columns: 0.95fr 1.3fr;
+  gap: 48px;
+  align-items: stretch;
+  margin-bottom: 64px;
+}
+
+/* Left: Manufacturing Photography Frame */
+.om-why-us-visual {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+}
+
+.om-why-us-image-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background-color: #05264E;
+}
+
+.om-why-us-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  image-rendering: -webkit-optimize-contrast;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.om-why-us-image-frame:hover .om-why-us-img {
+  transform: scale(1.04);
+}
+
+/* Overlapping Navy Information Badge on Image */
+.om-why-us-info-card {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  background: rgba(7, 59, 120, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 12px;
+  padding: 20px 24px;
+  color: #FFFFFF;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+  z-index: 3;
+}
+
+.om-why-us-info-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17.5px;
+  font-weight: 750;
+  color: #FFFFFF;
+  letter-spacing: -0.01em;
+}
+
+.om-why-us-info-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-brand-red, #D71920);
+  box-shadow: 0 0 8px rgba(215, 25, 32, 0.8);
+  flex-shrink: 0;
+}
+
+.om-why-us-info-text {
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 5px;
+}
+
+/* ==========================================================================
+   RIGHT: SIX KEY FEATURE CARDS (2-COL ON DESKTOP)
+   ========================================================================== */
+.om-why-us-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.om-why-card {
+  background: linear-gradient(145deg, #073B78 0%, #05264E 100%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 12px;
+  padding: 26px 22px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.om-why-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.32);
+}
+
+/* Feature Icon Container */
+.om-why-icon-wrap {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background: rgba(215, 25, 32, 0.2);
+  border: 1.5px solid rgba(215, 25, 32, 0.45);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  transition: all 0.25s ease;
+}
+
+.om-why-icon-wrap svg {
+  width: 24px;
+  height: 24px;
+  stroke: #FFFFFF;
+  stroke-width: 2.2;
+}
+
+.om-why-card:hover .om-why-icon-wrap {
+  background: var(--color-brand-red, #D71920);
+  border-color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(215, 25, 32, 0.45);
+  transform: scale(1.05);
+}
+
+.om-why-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.om-why-card-desc {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+/* ==========================================================================
+   SECTION BOTTOM COMPACT CTA PANEL
+   ========================================================================== */
+.om-why-us-cta {
+  background: linear-gradient(135deg, #073B78 0%, #041E3E 100%);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 16px;
+  padding: 44px 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.32);
+}
+
+.om-why-us-cta-content {
+  max-width: 740px;
+}
+
+.om-why-us-cta-title {
+  font-size: clamp(24px, 2.2vw, 30px);
+  font-weight: 750;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.om-why-us-cta-desc {
+  font-size: 16.5px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.om-btn-why-quote {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--color-brand-red, #D71920);
+  color: #FFFFFF;
+  font-size: 16.5px;
+  font-weight: 700;
+  padding: 16px 36px;
+  border-radius: 6px;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  box-shadow: 0 4px 18px rgba(215, 25, 32, 0.45);
+  transition: all 0.25s ease;
+}
+
+.om-btn-why-quote:hover {
+  background-color: #BF1319;
+  box-shadow: 0 6px 24px rgba(215, 25, 32, 0.55);
+  transform: translateY(-2px);
+}
+
+.om-btn-why-quote svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.25s ease;
+}
+
+.om-btn-why-quote:hover svg {
+  transform: translateX(4px);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN BREAKPOINTS
+   ========================================================================== */
+
+/* Laptop (1024px to 1280px) */
+@media (max-width: 1280px) {
+  .om-why-us-layout {
+    gap: 36px;
+  }
+
+  .om-why-us-features {
+    gap: 18px;
+  }
+
+  .om-why-card {
+    padding: 22px 18px;
+  }
+
+  .om-why-card-title {
+    font-size: 18.5px;
+  }
+}
+
+/* Tablet (768px to 1023px) — Stack visual & 2-Col Cards */
+@media (max-width: 1023px) {
+  .om-why-us-section {
+    padding: 80px 0 88px 0;
+  }
+
+  .om-why-us-container {
+    padding: 0 28px;
+  }
+
+  .om-why-us-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 52px;
+  }
+
+  .om-why-us-visual {
+    min-height: 420px;
+    max-height: 460px;
+  }
+
+  .om-why-us-features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .om-why-us-cta {
+    flex-direction: column;
+    text-align: center;
+    padding: 38px 30px;
+    gap: 24px;
+  }
+
+  .om-why-us-cta-content {
+    max-width: 100%;
+  }
+
+  .om-btn-why-quote {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+/* Mobile Screens (Under 768px) — 1-Col Everything */
+@media (max-width: 767px) {
+  .om-why-us-section {
+    padding: 60px 0 68px 0;
+  }
+
+  .om-why-us-container {
+    padding: 0 18px;
+  }
+
+  .om-why-us-header {
+    margin-bottom: 40px;
+  }
+
+  .om-why-us-title {
+    font-size: 30px;
+    line-height: 1.18;
+  }
+
+  .om-why-us-subtitle {
+    font-size: 16px;
+  }
+
+  .om-why-us-layout {
+    gap: 28px;
+    margin-bottom: 40px;
+  }
+
+  .om-why-us-visual {
+    min-height: 320px;
+    max-height: 360px;
+  }
+
+  .om-why-us-info-card {
+    bottom: 14px;
+    left: 14px;
+    right: 14px;
+    padding: 16px;
+  }
+
+  .om-why-us-info-header {
+    font-size: 15.5px;
+  }
+
+  .om-why-us-info-text {
+    font-size: 13.5px;
+  }
+
+  .om-why-us-features {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .om-why-card {
+    padding: 22px 20px;
+  }
+
+  .om-why-card-title {
+    font-size: 19px;
+  }
+
+  .om-why-card-desc {
+    font-size: 14.5px;
+  }
+
+  .om-why-us-cta {
+    padding: 30px 20px;
+    border-radius: 12px;
+  }
+
+  .om-why-us-cta-title {
+    font-size: 22px;
+  }
+
+  .om-why-us-cta-desc {
+    font-size: 15px;
+  }
+
+  .om-btn-why-quote {
+    width: 100%;
+    padding: 15px 24px;
+    font-size: 16px;
+  }
+}
