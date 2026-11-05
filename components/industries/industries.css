@@ -1,0 +1,521 @@
+/* ==========================================================================
+   OM BOTTLES MFG COMPANY — INDUSTRIES WE SERVE SECTION STYLES
+   Background: Clean White (#FFFFFF), Navy Blue (#073B78), Brand Red (#D71920)
+   Features: Continuous Seamless Horizontal Marquee Slider (Infinite Loop)
+   ========================================================================== */
+
+.om-industries-section {
+  position: relative;
+  width: 100%;
+  padding: 104px 0 112px 0;
+  background-color: #FFFFFF;
+  color: #26364A;
+  overflow: hidden;
+}
+
+/* Subtle background accent */
+.om-industries-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 380px;
+  background: linear-gradient(180deg, #F3F6FA 0%, rgba(243, 246, 250, 0) 100%);
+  pointer-events: none;
+}
+
+.om-industries-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ==========================================================================
+   SECTION HEADER (CENTERED, NAVY & BRAND RED ACCENTS)
+   ========================================================================== */
+.om-industries-header {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 56px auto;
+}
+
+.om-industries-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-primary-navy, #073B78);
+  background-color: rgba(7, 59, 120, 0.07);
+  padding: 7px 18px;
+  border-radius: 4px;
+  border-left: 3.5px solid var(--color-brand-red, #D71920);
+  margin-bottom: 20px;
+}
+
+.om-industries-title {
+  font-size: clamp(38px, 4vw, 48px);
+  font-weight: 800;
+  line-height: 1.18;
+  color: #172B45;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Elegant brand-red accent underline below the heading */
+.om-industries-title::after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 3.5px;
+  background: var(--color-brand-red, #D71920);
+  border-radius: 2px;
+  margin: 14px auto 0 auto;
+}
+
+.om-industries-subtitle {
+  font-size: clamp(17px, 1.25vw, 19px);
+  font-weight: 400;
+  line-height: 1.68;
+  color: #556987;
+  margin-top: 18px;
+}
+
+/* ==========================================================================
+   CONTINUOUS HORIZONTAL SLIDER (INFINITE MARQUEE)
+   ========================================================================== */
+.om-industries-slider-wrap {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  overflow: hidden;
+  padding: 24px 0 36px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Subtle edge fade gradient masks for smooth entering and exiting */
+.om-industries-slider-wrap::before,
+.om-industries-slider-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.om-industries-slider-wrap::before {
+  left: 0;
+  background: linear-gradient(90deg, #FFFFFF 15%, rgba(255, 255, 255, 0) 100%);
+}
+
+.om-industries-slider-wrap::after {
+  right: 0;
+  background: linear-gradient(270deg, #FFFFFF 15%, rgba(255, 255, 255, 0) 100%);
+}
+
+.om-industries-track {
+  display: flex;
+  width: max-content;
+  animation: omIndustriesMarquee 38s linear infinite;
+  will-change: transform;
+}
+
+.om-industries-group {
+  display: flex;
+  gap: 30px;
+  padding-right: 30px; /* Matches gap to ensure seamless loop */
+  flex-shrink: 0;
+}
+
+@keyframes omIndustriesMarquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+/* Smooth pause on mouse hover */
+.om-industries-slider-wrap:hover .om-industries-track {
+  animation-play-state: paused;
+}
+
+/* ==========================================================================
+   PREMIUM INDUSTRY CARDS (340px Width, 4:3 Aspect Ratio Photo)
+   ========================================================================== */
+.om-industry-card {
+  width: 340px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 14px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 6px 20px rgba(7, 59, 120, 0.06);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.35s ease;
+  position: relative;
+}
+
+.om-industry-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--color-brand-red, #D71920);
+  box-shadow: 0 18px 42px -10px rgba(7, 59, 120, 0.18),
+              0 6px 16px -4px rgba(215, 25, 32, 0.12);
+}
+
+/* Image Container (4:3 Ratio) */
+.om-industry-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background-color: #F8FAFC;
+  border-bottom: 1px solid #EEF2F6;
+}
+
+.om-industry-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.om-industry-card:hover .om-industry-img {
+  transform: scale(1.07);
+}
+
+/* Industry Number Tag */
+.om-industry-tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: rgba(7, 59, 120, 0.92);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: #FFFFFF;
+  font-size: 11.5px;
+  font-weight: 750;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 4px;
+  border-left: 3px solid var(--color-brand-red, #D71920);
+  z-index: 2;
+  transition: background-color 0.25s ease;
+}
+
+.om-industry-card:hover .om-industry-tag {
+  background: var(--color-brand-red, #D71920);
+}
+
+/* Card Body */
+.om-industry-body {
+  padding: 24px 22px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.om-industry-card-title {
+  font-size: 20px;
+  font-weight: 750;
+  color: var(--color-primary-navy, #073B78);
+  margin-bottom: 10px;
+  letter-spacing: -0.015em;
+  line-height: 1.32;
+  transition: color 0.25s ease;
+}
+
+.om-industry-card:hover .om-industry-card-title {
+  color: var(--color-brand-red, #D71920);
+}
+
+.om-industry-card-desc {
+  font-size: 14.5px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #556987;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+/* Card Footer Action with Arrow */
+.om-industry-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-primary-navy, #073B78);
+  transition: color 0.25s ease, gap 0.25s ease;
+  margin-top: auto;
+}
+
+.om-industry-action-arrow {
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  color: var(--color-brand-red, #D71920);
+}
+
+.om-industry-card:hover .om-industry-action {
+  color: var(--color-brand-red, #D71920);
+  gap: 12px;
+}
+
+.om-industry-card:hover .om-industry-action-arrow {
+  transform: translateX(4px);
+}
+
+/* Subtle Card Accent Bar */
+.om-industry-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-brand-red, #D71920);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.om-industry-card:hover::after {
+  transform: scaleX(1);
+}
+
+/* ==========================================================================
+   SECTION BOTTOM COMPACT CTA PANEL
+   ========================================================================== */
+.om-industries-bottom-cta {
+  margin-top: 64px;
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 40px 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(7, 59, 120, 0.05);
+}
+
+.om-industries-bottom-cta::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: var(--color-brand-red, #D71920);
+}
+
+.om-industries-cta-text {
+  max-width: 740px;
+}
+
+.om-industries-cta-title {
+  font-size: clamp(23px, 2vw, 29px);
+  font-weight: 750;
+  color: var(--color-primary-navy, #073B78);
+  margin-bottom: 8px;
+  letter-spacing: -0.015em;
+}
+
+.om-industries-cta-desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #556987;
+}
+
+.om-btn-industries-products {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--color-brand-red, #D71920);
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 34px;
+  border-radius: 6px;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(215, 25, 32, 0.35);
+  transition: all 0.25s ease;
+}
+
+.om-btn-industries-products:hover {
+  background-color: #BF1319;
+  box-shadow: 0 6px 22px rgba(215, 25, 32, 0.45);
+  transform: translateY(-2px);
+}
+
+.om-btn-industries-products svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.25s ease;
+}
+
+.om-btn-industries-products:hover svg {
+  transform: translateX(4px);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN & ACCESSIBILITY
+   ========================================================================== */
+
+/* Laptop screens */
+@media (max-width: 1200px) {
+  .om-industries-bottom-cta {
+    padding: 34px 40px;
+    gap: 28px;
+  }
+}
+
+/* Tablet screens (under 1024px) */
+@media (max-width: 1023px) {
+  .om-industries-section {
+    padding: 80px 0 88px 0;
+  }
+
+  .om-industries-container {
+    padding: 0 28px;
+  }
+
+  .om-industry-card {
+    width: 300px;
+  }
+
+  .om-industries-track {
+    animation-duration: 32s;
+  }
+
+  .om-industries-bottom-cta {
+    flex-direction: column;
+    text-align: center;
+    padding: 34px 28px;
+    gap: 22px;
+  }
+
+  .om-industries-bottom-cta::before {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: auto;
+    width: 100%;
+    height: 4px;
+  }
+
+  .om-btn-industries-products {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+/* Mobile screens (under 768px) */
+@media (max-width: 767px) {
+  .om-industries-section {
+    padding: 60px 0 68px 0;
+  }
+
+  .om-industries-container {
+    padding: 0 18px;
+  }
+
+  .om-industries-header {
+    margin-bottom: 38px;
+  }
+
+  .om-industries-title {
+    font-size: 29px;
+  }
+
+  .om-industries-subtitle {
+    font-size: 15.5px;
+  }
+
+  .om-industries-slider-wrap {
+    padding: 16px 0 24px 0;
+  }
+
+  .om-industries-slider-wrap::before,
+  .om-industries-slider-wrap::after {
+    width: 40px;
+  }
+
+  .om-industry-card {
+    width: 275px;
+  }
+
+  .om-industry-body {
+    padding: 18px 16px;
+  }
+
+  .om-industry-card-title {
+    font-size: 18px;
+  }
+
+  .om-industry-card-desc {
+    font-size: 13.5px;
+  }
+
+  .om-industries-bottom-cta {
+    margin-top: 44px;
+    padding: 28px 18px;
+  }
+
+  .om-industries-cta-title {
+    font-size: 21px;
+  }
+
+  .om-industries-cta-desc {
+    font-size: 14.5px;
+  }
+
+  .om-btn-industries-products {
+    width: 100%;
+    font-size: 15px;
+    padding: 14px 20px;
+  }
+}
+
+/* Respect prefers-reduced-motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .om-industries-track {
+    animation: none;
+  }
+  .om-industries-slider-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
