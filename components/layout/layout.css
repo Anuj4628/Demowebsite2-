@@ -1,0 +1,23 @@
+/* OM BOTTLES MFG COMPANY — Core Layout & Page Structure Tokens */
+
+.om-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.om-main-content {
+  flex: 1 0 auto;
+}
+
+/* Section Spacing Utilities for future pages */
+.om-section {
+  padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+  .om-section {
+    padding: 50px 0;
+  }
+}
+

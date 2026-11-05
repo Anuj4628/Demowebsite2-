@@ -1,0 +1,166 @@
+<!-- OM BOTTLES MFG COMPANY — HEADER & NAVBAR COMPONENT -->
+<header class="om-header" role="banner">
+  <div class="om-navbar-container">
+    
+    <!-- LEFT: Large Company Logo -->
+    <a href="index.html" class="om-logo-link" aria-label="OM BOTTLES MFG COMPANY - Home">
+      <img 
+        src="assets/images/logo/om-bottles-logo.png" 
+        alt="OM BOTTLES MFG COMPANY" 
+        class="om-logo-img"
+        loading="eager"
+      />
+    </a>
+
+    <!-- CENTER: Desktop Navigation Items -->
+    <nav class="om-nav-center" aria-label="Main Navigation">
+      <ul class="om-nav-list">
+        
+        <!-- 1. Home (Active initially) -->
+        <li class="om-nav-item is-active" data-page="home">
+          <a href="index.html" class="om-nav-link">Home</a>
+        </li>
+
+        <!-- 2. About Us -->
+        <li class="om-nav-item" data-page="about">
+          <a href="pages/about/index.html" class="om-nav-link">About Us</a>
+        </li>
+
+        <!-- 3. Products with Dropdown -->
+        <li class="om-nav-item om-nav-item-dropdown" data-page="products">
+          <a href="pages/products/index.html" class="om-nav-link om-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            <span>Products</span>
+            <svg class="om-chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="om-dropdown-menu" role="menu">
+            <div class="om-dropdown-item" role="none">
+              <a href="pages/products/index.html#aluminium-bottles" class="om-dropdown-link" role="menuitem">
+                <span>Aluminium Bottles</span>
+                <svg class="om-dropdown-arrow" viewBox="0 0 24 24" fill="none">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </a>
+            </div>
+            <div class="om-dropdown-item" role="none">
+              <a href="pages/products/index.html#dome-lights" class="om-dropdown-link" role="menuitem">
+                <span>Dome Lights</span>
+                <svg class="om-dropdown-arrow" viewBox="0 0 24 24" fill="none">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <!-- 4. Certificates -->
+        <li class="om-nav-item" data-page="certificates">
+          <a href="pages/certificates/index.html" class="om-nav-link">Certificates</a>
+        </li>
+
+        <!-- 5. Contact Us -->
+        <li class="om-nav-item" data-page="contact">
+          <a href="pages/contact/index.html" class="om-nav-link">Contact Us</a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <!-- RIGHT: Prominent Get Quote CTA Button & Mobile Hamburger -->
+    <div class="om-nav-right">
+      <!-- 6. Get Quote Button -->
+      <a href="pages/get-quote/index.html" class="om-btn-quote om-desktop-only">
+        <span>Get Quote</span>
+        <svg class="om-btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+
+      <!-- Mobile Hamburger Toggle Button -->
+      <button 
+        class="om-hamburger" 
+        type="button" 
+        aria-label="Toggle navigation menu" 
+        aria-expanded="false"
+        aria-controls="omMobileDrawer"
+      >
+        <span class="om-hamburger-box">
+          <span class="om-hamburger-line"></span>
+          <span class="om-hamburger-line"></span>
+          <span class="om-hamburger-line"></span>
+        </span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<!-- Backdrop overlay for mobile menu -->
+<div class="om-mobile-backdrop" id="omMobileBackdrop" aria-hidden="true"></div>
+
+<!-- Mobile Navigation Drawer -->
+<aside class="om-mobile-drawer" id="omMobileDrawer" aria-label="Mobile Navigation" aria-hidden="true">
+  <div class="om-mobile-drawer-header">
+    <img 
+      src="assets/images/logo/om-bottles-logo.png" 
+      alt="OM BOTTLES MFG COMPANY" 
+      class="om-mobile-logo-img"
+    />
+    <button class="om-mobile-close-btn" type="button" aria-label="Close menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+
+  <ul class="om-mobile-nav-list">
+    <!-- 1. Home -->
+    <li class="om-mobile-nav-item is-active" data-page="home">
+      <a href="index.html" class="om-mobile-nav-link">Home</a>
+    </li>
+
+    <!-- 2. About Us -->
+    <li class="om-mobile-nav-item" data-page="about">
+      <a href="pages/about/index.html" class="om-mobile-nav-link">About Us</a>
+    </li>
+
+    <!-- 3. Products with Accordion -->
+    <li class="om-mobile-nav-item has-accordion" data-page="products">
+      <button class="om-mobile-accordion-btn" type="button" aria-expanded="false">
+        <span>Products</span>
+        <svg class="om-mobile-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div class="om-mobile-submenu">
+        <a href="pages/products/index.html#aluminium-bottles" class="om-mobile-sublink">Aluminium Bottles</a>
+        <a href="pages/products/index.html#dome-lights" class="om-mobile-sublink">Dome Lights</a>
+      </div>
+    </li>
+
+    <!-- 4. Certificates -->
+    <li class="om-mobile-nav-item" data-page="certificates">
+      <a href="pages/certificates/index.html" class="om-mobile-nav-link">Certificates</a>
+    </li>
+
+    <!-- 5. Contact Us -->
+    <li class="om-mobile-nav-item" data-page="contact">
+      <a href="pages/contact/index.html" class="om-mobile-nav-link">Contact Us</a>
+    </li>
+  </ul>
+
+  <!-- 6. Get Quote in Mobile Menu -->
+  <div class="om-mobile-drawer-footer">
+    <a href="pages/get-quote/index.html" class="om-mobile-btn-quote">
+      <span>Get Quote</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </svg>
+    </a>
+  </div>
+</aside>
+
