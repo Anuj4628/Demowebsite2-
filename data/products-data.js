@@ -432,3 +432,4 @@ export const APPLICATIONS = [
     webp: 'assets/images/industries/industry-lighting.webp'
   }
 ];
+
