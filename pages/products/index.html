@@ -3,18 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products — OM BOTTLES MFG COMPANY</title>
+  <title>Our Products — OM BOTTLES MFG COMPANY</title>
   <link rel="icon" type="image/png" href="../../assets/images/logo/om-bottles-logo.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="../../styles/variables.css">
   <link rel="stylesheet" href="../../styles/main.css">
   <link rel="stylesheet" href="../../components/navbar/navbar.css">
-</head>
-<body>
+  <link rel="stylesheet" href="../../components/cta/cta.css">
+  <link rel="stylesheet" href="../../components/footer/footer.css">
+  <link rel="stylesheet" href="products.css">
 
-  <!-- OM BOTTLES RESPONSIVE NAVBAR -->
+  <!-- Preload Hero Visual -->
+  <link rel="preload" as="image" href="../../assets/images/about/about-hero.webp" type="image/webp">
+</head>
+<body data-category-name="All Products">
+
+  <!-- ========================================================================
+       PREMIUM RESPONSIVE NAVBAR — OM BOTTLES MFG COMPANY
+       ======================================================================== -->
   <header class="om-header" role="banner">
     <div class="om-navbar-container">
       
@@ -46,19 +58,39 @@
             </a>
             <div class="om-dropdown-menu" role="menu">
               <div class="om-dropdown-item" role="none">
-                <a href="#aluminium-bottles" class="om-dropdown-link" role="menuitem">
-                  <span>Aluminium Bottles</span>
-                  <svg class="om-dropdown-arrow" viewBox="0 0 24 24" fill="none">
-                    <polyline points="9 18 15 12 9 6"></polyline>
-                  </svg>
+                <a href="pharma-bottles/index.html" class="om-dropdown-link" role="menuitem">
+                  <span>Pharma Bottles</span>
+                  <svg class="om-dropdown-arrow" viewBox="0 0 24 24" fill="none"><polyline points="9 18 15 12 9 6"></polyline></svg>
                 </a>
               </div>
               <div class="om-dropdown-item" role="none">
-                <a href="#dome-lights" class="om-dropdown-link" role="menuitem">
-                  <span>Dome Lights</span>
-                  <svg class="om-dropdown-arrow" viewBox="0 0 24 24" fill="none">
-                    <polyline points="9 18 15 12 9 6"></polyline>
-                  </svg>
+                <a href="chemical-bottles/index.html" class="om-dropdown-link" role="menuitem">
+                  <span>Chemical Bottles</span>
+                  <svg class="om-dropdown-arrow" viewBox="0 0 24 24" fill="none"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+              <div class="om-dropdown-item" role="none">
+                <a href="attar-bottles/index.html" class="om-dropdown-link" role="menuitem">
+                  <span>Attar Bottles</span>
+                  <svg class="om-dropdown-arrow" viewBox="0 0 24 24" fill="none"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+              <div class="om-dropdown-item" role="none">
+                <a href="perfume-bottles/index.html" class="om-dropdown-link" role="menuitem">
+                  <span>Perfume Bottles</span>
+                  <svg class="om-dropdown-arrow" viewBox="0 0 24 24" fill="none"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+              <div class="om-dropdown-item" role="none">
+                <a href="water-bottles/index.html" class="om-dropdown-link" role="menuitem">
+                  <span>Water Bottles</span>
+                  <svg class="om-dropdown-arrow" viewBox="0 0 24 24" fill="none"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+              <div class="om-dropdown-item" role="none">
+                <a href="dome-lights/index.html" class="om-dropdown-link" role="menuitem">
+                  <span>Aluminium Dome Lights</span>
+                  <svg class="om-dropdown-arrow" viewBox="0 0 24 24" fill="none"><polyline points="9 18 15 12 9 6"></polyline></svg>
                 </a>
               </div>
             </div>
@@ -101,7 +133,7 @@
     <div class="om-mobile-drawer-header">
       <img src="../../assets/images/logo/om-bottles-logo.png" alt="OM BOTTLES MFG COMPANY" class="om-mobile-logo-img" />
       <button class="om-mobile-close-btn" type="button" aria-label="Close menu">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
           <line x1="18" y1="6" x2="6" y2="18"></line>
           <line x1="6" y1="6" x2="18" y2="18"></line>
         </svg>
@@ -109,30 +141,26 @@
     </div>
 
     <ul class="om-mobile-nav-list">
-      <li class="om-mobile-nav-item" data-page="home">
-        <a href="../../index.html" class="om-mobile-nav-link">Home</a>
-      </li>
-      <li class="om-mobile-nav-item" data-page="about">
-        <a href="../about/index.html" class="om-mobile-nav-link">About Us</a>
-      </li>
+      <li class="om-mobile-nav-item" data-page="home"><a href="../../index.html" class="om-mobile-nav-link">Home</a></li>
+      <li class="om-mobile-nav-item" data-page="about"><a href="../about/index.html" class="om-mobile-nav-link">About Us</a></li>
       <li class="om-mobile-nav-item has-accordion is-active" data-page="products">
-        <button class="om-mobile-accordion-btn" type="button" aria-expanded="false">
+        <button class="om-mobile-accordion-btn" type="button" aria-expanded="true">
           <span>Products</span>
           <svg class="om-mobile-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
             <polyline points="6 9 12 15 18 9"></polyline>
           </svg>
         </button>
-        <div class="om-mobile-submenu">
-          <a href="#aluminium-bottles" class="om-mobile-sublink">Aluminium Bottles</a>
-          <a href="#dome-lights" class="om-mobile-sublink">Dome Lights</a>
+        <div class="om-mobile-submenu" style="display: block;">
+          <a href="pharma-bottles/index.html" class="om-mobile-sublink">Pharma Bottles</a>
+          <a href="chemical-bottles/index.html" class="om-mobile-sublink">Chemical Bottles</a>
+          <a href="attar-bottles/index.html" class="om-mobile-sublink">Attar Bottles</a>
+          <a href="perfume-bottles/index.html" class="om-mobile-sublink">Perfume Bottles</a>
+          <a href="water-bottles/index.html" class="om-mobile-sublink">Water Bottles</a>
+          <a href="dome-lights/index.html" class="om-mobile-sublink">Aluminium Dome Lights</a>
         </div>
       </li>
-      <li class="om-mobile-nav-item" data-page="certificates">
-        <a href="../certificates/index.html" class="om-mobile-nav-link">Certificates</a>
-      </li>
-      <li class="om-mobile-nav-item" data-page="contact">
-        <a href="../contact/index.html" class="om-mobile-nav-link">Contact Us</a>
-      </li>
+      <li class="om-mobile-nav-item" data-page="certificates"><a href="../certificates/index.html" class="om-mobile-nav-link">Certificates</a></li>
+      <li class="om-mobile-nav-item" data-page="contact"><a href="../contact/index.html" class="om-mobile-nav-link">Contact Us</a></li>
     </ul>
 
     <div class="om-mobile-drawer-footer">
@@ -146,44 +174,675 @@
     </div>
   </aside>
 
-  <!-- Category Target Placeholders for smooth navigation from homepage cards -->
-  <main class="om-page-wrapper" style="padding: 60px 24px; max-width: 1200px; margin: 0 auto;">
-    <div id="aluminium-bottles" style="scroll-margin-top: 100px;"></div>
-    <div id="pharma-bottles" style="scroll-margin-top: 100px;"></div>
-    <div id="chemical-bottles" style="scroll-margin-top: 100px;"></div>
-    <div id="attar-bottles" style="scroll-margin-top: 100px;"></div>
-    <div id="perfume-bottles" style="scroll-margin-top: 100px;"></div>
-    <div id="water-bottles" style="scroll-margin-top: 100px;"></div>
-    <div id="dome-lights" style="scroll-margin-top: 100px;"></div>
-  </main>
+  <!-- ========================================================================
+       1. PRODUCTS HERO SECTION
+       ======================================================================== -->
+  <section class="om-products-hero" aria-labelledby="products-hero-heading">
+    <div class="om-products-container">
+      <div class="om-products-hero-grid">
 
-  <!-- GLOBAL FLOATING CONTACT BUTTONS (WHATSAPP & CALL NOW) -->
+        <!-- Left Content -->
+        <div class="om-products-hero-content">
+          <div class="om-section-badge om-badge-red">
+            <span>OFFICIAL PRODUCT CATALOGUE</span>
+          </div>
+
+          <h1 id="products-hero-heading" class="om-products-hero-title">
+            Our Products — <span class="highlight-red">Aluminium Bottle & Dome Light Solutions</span>
+          </h1>
+
+          <p class="om-products-hero-desc">
+            Explore our range of aluminium bottles and dome light products, designed for different applications and product requirements. Browse our categories to discover available product options, sizes and specifications.
+          </p>
+
+          <div class="om-products-hero-actions">
+            <a href="#categories" id="btnExploreCategories" class="om-btn-prod-primary">
+              <span>Explore Categories</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+            </a>
+
+            <a href="../get-quote/index.html" class="om-btn-prod-secondary">
+              <span>Get a Quote</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Visual: Photorealistic Composition -->
+        <div class="om-products-hero-visual">
+          <div class="om-products-hero-frame">
+            <picture>
+              <source srcset="../../assets/images/about/about-hero.webp" type="image/webp">
+              <img 
+                src="../../assets/images/about/about-hero.jpg" 
+                alt="Comprehensive collection of OM Bottles aluminium containers in multiple capacities" 
+                class="om-products-hero-img"
+                width="800"
+                height="600"
+                fetchpriority="high"
+                loading="eager"
+              />
+            </picture>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       2. PRODUCT CATEGORY SECTION (MOST IMPORTANT)
+       ======================================================================== -->
+  <section class="om-products-section" id="categories" aria-labelledby="categories-heading">
+    <div class="om-products-container">
+
+      <!-- Section Header -->
+      <header class="om-section-header">
+        <div class="om-section-badge">
+          <span>PRODUCT RANGE</span>
+        </div>
+        <h2 id="categories-heading" class="om-section-title">
+          Explore Our Product Categories
+        </h2>
+        <p class="om-section-subtitle">
+          Find the right product range for your application. Select a category to explore its products, available sizes and specifications.
+        </p>
+      </header>
+
+      <!-- Interactive Filter & Search Control Bar -->
+      <div class="om-filter-search-wrap">
+        <div class="om-search-box">
+          <svg class="om-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input 
+            type="text" 
+            id="productSearchInput" 
+            class="om-search-input" 
+            placeholder="Search categories (e.g., Pharma, Chemical, Attar, Dome Lights)..."
+            aria-label="Search product categories"
+          />
+        </div>
+
+        <div class="om-filter-pills" role="tablist" aria-label="Category Filters">
+          <button type="button" class="om-filter-btn is-active" data-filter="all">All Categories</button>
+          <button type="button" class="om-filter-btn" data-filter="pharma-bottles">Pharma</button>
+          <button type="button" class="om-filter-btn" data-filter="chemical-bottles">Chemical</button>
+          <button type="button" class="om-filter-btn" data-filter="attar-bottles">Attar</button>
+          <button type="button" class="om-filter-btn" data-filter="perfume-bottles">Perfume</button>
+          <button type="button" class="om-filter-btn" data-filter="water-bottles">Water</button>
+          <button type="button" class="om-filter-btn" data-filter="dome-lights">Dome Lights</button>
+        </div>
+      </div>
+
+      <!-- SIX MAIN CATEGORY CARDS (3x2 Desktop Grid) -->
+      <div class="om-categories-grid" id="categoryCardsContainer">
+
+        <!-- Category 1: Pharma Bottles -->
+        <a href="pharma-bottles/index.html" class="om-category-card" data-category="pharma-bottles">
+          <div class="om-category-media">
+            <picture>
+              <source srcset="../../assets/images/products/pharma-bottles.webp" type="image/webp">
+              <img 
+                src="../../assets/images/products/pharma-bottles.jpg" 
+                alt="Silver aluminium pharmaceutical bottles with coloured caps"
+                class="om-category-img"
+                width="600"
+                height="450"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="om-category-body">
+            <h3 class="om-category-card-title">Pharma Bottles</h3>
+            <p class="om-category-card-desc">
+              Aluminium bottle options for pharmaceutical and related packaging applications.
+            </p>
+            <div class="om-category-action">
+              <span>View Products & Sizes</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category 2: Chemical Bottles -->
+        <a href="chemical-bottles/index.html" class="om-category-card" data-category="chemical-bottles">
+          <div class="om-category-media">
+            <picture>
+              <source srcset="../../assets/images/products/chemical-bottles.webp" type="image/webp">
+              <img 
+                src="../../assets/images/products/chemical-bottles.jpg" 
+                alt="Aluminium chemical containers with clean laboratory setup"
+                class="om-category-img"
+                width="600"
+                height="450"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="om-category-body">
+            <h3 class="om-category-card-title">Chemical Bottles</h3>
+            <p class="om-category-card-desc">
+              Aluminium bottles for different chemical packaging applications and requirements.
+            </p>
+            <div class="om-category-action">
+              <span>View Products & Sizes</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category 3: Attar Bottles -->
+        <a href="attar-bottles/index.html" class="om-category-card" data-category="attar-bottles">
+          <div class="om-category-media">
+            <picture>
+              <source srcset="../../assets/images/products/attar-bottles.webp" type="image/webp">
+              <img 
+                src="../../assets/images/products/attar-bottles.jpg" 
+                alt="Small elegant aluminium attar bottles with attractive caps"
+                class="om-category-img"
+                width="600"
+                height="450"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="om-category-body">
+            <h3 class="om-category-card-title">Attar Bottles</h3>
+            <p class="om-category-card-desc">
+              Aluminium bottle options for attar and traditional fragrance packaging.
+            </p>
+            <div class="om-category-action">
+              <span>View Products & Sizes</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category 4: Perfume Bottles -->
+        <a href="perfume-bottles/index.html" class="om-category-card" data-category="perfume-bottles">
+          <div class="om-category-media">
+            <picture>
+              <source srcset="../../assets/images/products/perfume-bottles.webp" type="image/webp">
+              <img 
+                src="../../assets/images/products/perfume-bottles.jpg" 
+                alt="Premium aluminium fragrance bottles in professional studio setup"
+                class="om-category-img"
+                width="600"
+                height="450"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="om-category-body">
+            <h3 class="om-category-card-title">Perfume Bottles</h3>
+            <p class="om-category-card-desc">
+              Explore aluminium bottle options for perfume and fragrance-related applications.
+            </p>
+            <div class="om-category-action">
+              <span>View Products & Sizes</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category 5: Water Bottles -->
+        <a href="water-bottles/index.html" class="om-category-card" data-category="water-bottles">
+          <div class="om-category-media">
+            <picture>
+              <source srcset="../../assets/images/products/water-bottles.webp" type="image/webp">
+              <img 
+                src="../../assets/images/products/water-bottles.jpg" 
+                alt="Modern silver aluminium water bottles in different sizes"
+                class="om-category-img"
+                width="600"
+                height="450"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="om-category-body">
+            <h3 class="om-category-card-title">Water Bottles</h3>
+            <p class="om-category-card-desc">
+              Aluminium water bottle options in practical sizes and styles.
+            </p>
+            <div class="om-category-action">
+              <span>View Products & Sizes</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category 6: Aluminium Dome Lights -->
+        <a href="dome-lights/index.html" class="om-category-card" data-category="dome-lights">
+          <div class="om-category-media">
+            <picture>
+              <source srcset="../../assets/images/products/dome-lights.webp" type="image/webp">
+              <img 
+                src="../../assets/images/products/dome-lights.jpg" 
+                alt="Premium collection of aluminium dome lights and industrial LED fixtures"
+                class="om-category-img"
+                width="600"
+                height="450"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="om-category-body">
+            <h3 class="om-category-card-title">Aluminium Dome Lights</h3>
+            <p class="om-category-card-desc">
+              Explore aluminium dome shades, reflectors and related lighting products.
+            </p>
+            <div class="om-category-action">
+              <span>View Products & Sizes</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       PART 5: INDUSTRY / APPLICATION-WISE PRODUCT DISCOVERY
+       ======================================================================== -->
+  <section class="om-products-section om-products-section-alt" id="applications" aria-labelledby="apps-heading">
+    <div class="om-products-container">
+
+      <!-- Section Header -->
+      <header class="om-section-header">
+        <div class="om-section-badge">
+          <span>TARGET APPLICATIONS</span>
+        </div>
+        <h2 id="apps-heading" class="om-section-title">
+          Explore Products by Application
+        </h2>
+        <p class="om-section-subtitle">
+          Discover specialized aluminium packaging and lighting solutions designed around specific sector regulations and functional requirements.
+        </p>
+      </header>
+
+      <!-- 6 Application Cards Grid -->
+      <div class="om-apps-grid">
+
+        <!-- App 1: Pharmaceutical Applications -->
+        <a href="pharma-bottles/index.html" class="om-app-card">
+          <div class="om-app-media">
+            <picture>
+              <source srcset="../../assets/images/industries/industry-pharma.webp" type="image/webp">
+              <img 
+                src="../../assets/images/industries/industry-pharma.jpg" 
+                alt="Pharmaceutical Applications" 
+                class="om-app-img"
+                width="600"
+                height="450"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="om-app-body">
+            <h3 class="om-app-title">Pharmaceutical Applications</h3>
+            <p class="om-app-desc">Light-shielded, hygienic aluminium packaging for liquid medicines, tonics, and lab reagents.</p>
+            <div class="om-app-action">
+              <span>Explore Category</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- App 2: Chemical Packaging -->
+        <a href="chemical-bottles/index.html" class="om-app-card">
+          <div class="om-app-media">
+            <picture>
+              <source srcset="../../assets/images/industries/industry-chemical.webp" type="image/webp">
+              <img 
+                src="../../assets/images/industries/industry-chemical.jpg" 
+                alt="Chemical Packaging" 
+                class="om-app-img"
+                width="600"
+                height="450"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="om-app-body">
+            <h3 class="om-app-title">Chemical Packaging</h3>
+            <p class="om-app-desc">Corrosion-resistant aluminium bottles for industrial chemicals, lubricants, and agrochemical solutions.</p>
+            <div class="om-app-action">
+              <span>Explore Category</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- App 3: Attar & Traditional Fragrance -->
+        <a href="attar-bottles/index.html" class="om-app-card">
+          <div class="om-app-media">
+            <picture>
+              <source srcset="../../assets/images/industries/industry-attar.webp" type="image/webp">
+              <img 
+                src="../../assets/images/industries/industry-attar.jpg" 
+                alt="Attar & Traditional Fragrance" 
+                class="om-app-img"
+                width="600"
+                height="450"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="om-app-body">
+            <h3 class="om-app-title">Attar & Traditional Fragrance</h3>
+            <p class="om-app-desc">Airtight, non-reactive containers preserving the purity of traditional ittar and floral extracts.</p>
+            <div class="om-app-action">
+              <span>Explore Category</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- App 4: Perfume & Fragrance Packaging -->
+        <a href="perfume-bottles/index.html" class="om-app-card">
+          <div class="om-app-media">
+            <picture>
+              <source srcset="../../assets/images/industries/industry-perfume.webp" type="image/webp">
+              <img 
+                src="../../assets/images/industries/industry-perfume.jpg" 
+                alt="Perfume & Fragrance Packaging" 
+                class="om-app-img"
+                width="600"
+                height="450"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="om-app-body">
+            <h3 class="om-app-title">Perfume & Fragrance Packaging</h3>
+            <p class="om-app-desc">Aesthetic brushed aluminium bottles with mist atomisers for commercial perfumes and body sprays.</p>
+            <div class="om-app-action">
+              <span>Explore Category</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- App 5: Water Packaging -->
+        <a href="water-bottles/index.html" class="om-app-card">
+          <div class="om-app-media">
+            <picture>
+              <source srcset="../../assets/images/industries/industry-water.webp" type="image/webp">
+              <img 
+                src="../../assets/images/industries/industry-water.jpg" 
+                alt="Water Packaging" 
+                class="om-app-img"
+                width="600"
+                height="450"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="om-app-body">
+            <h3 class="om-app-title">Water Packaging</h3>
+            <p class="om-app-desc">Reusable, food-grade lined aluminium bottles for pure mineral water and lifestyle hydration.</p>
+            <div class="om-app-action">
+              <span>Explore Category</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- App 6: Lighting Applications -->
+        <a href="dome-lights/index.html" class="om-app-card">
+          <div class="om-app-media">
+            <picture>
+              <source srcset="../../assets/images/industries/industry-lighting.webp" type="image/webp">
+              <img 
+                src="../../assets/images/industries/industry-lighting.jpg" 
+                alt="Lighting Applications" 
+                class="om-app-img"
+                width="600"
+                height="450"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="om-app-body">
+            <h3 class="om-app-title">Lighting Applications</h3>
+            <p class="om-app-desc">Architectural dome light shades, cluster pendants, and industrial LED high-bay reflectors.</p>
+            <div class="om-app-action">
+              <span>Explore Category</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       REUSED HOMEPAGE FINAL CTA SECTION
+       ======================================================================== -->
+  <section class="om-final-cta-section" id="final-cta" aria-labelledby="final-cta-title">
+    <div class="om-final-cta-container">
+      <div class="om-final-cta-badge">
+        <span>START YOUR PACKAGING PROJECT</span>
+      </div>
+      <h2 id="final-cta-title" class="om-final-cta-title">
+        Looking for the Right <span class="highlight-red">Aluminium Bottle</span> or Dome Light Solution?
+      </h2>
+      <p class="om-final-cta-desc">
+        Get in touch with our team to discuss your product requirements. We are here to help you find the right solution for your application.
+      </p>
+      <div class="om-final-cta-buttons">
+        <a href="../get-quote/index.html" class="om-btn-cta-primary">
+          <span>Get a Quote</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        <a href="../contact/index.html" class="om-btn-cta-secondary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <span>Contact Us</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       REUSED HOMEPAGE FOOTER
+       ======================================================================== -->
+  <footer class="om-footer" role="contentinfo">
+    <div class="om-footer-container">
+      <div class="om-footer-grid">
+
+        <!-- Column 1 -->
+        <div class="om-footer-col om-footer-col-brand">
+          <a href="../../index.html" class="om-footer-logo-card" aria-label="OM Bottles MFG Company Home">
+            <img 
+              src="../../assets/images/logo/om-bottles-logo.png" 
+              alt="OM BOTTLES MFG COMPANY" 
+              class="om-footer-logo-img"
+              width="220"
+              height="48"
+              loading="lazy"
+            />
+          </a>
+          <p class="om-footer-intro">
+            OM Bottles MFG COMPANY offers aluminium bottle solutions for different packaging and industrial applications, along with a range of related products.
+          </p>
+          <div class="om-footer-socials" aria-label="Social Media Links">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="om-social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="om-social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="om-social-link" aria-label="X">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="om-footer-col">
+          <h3 class="om-footer-title">Quick Links</h3>
+          <ul class="om-footer-links">
+            <li class="om-footer-link-item"><a href="../../index.html">Home</a></li>
+            <li class="om-footer-link-item"><a href="../about/index.html">About Us</a></li>
+            <li class="om-footer-link-item"><a href="index.html">Products</a></li>
+            <li class="om-footer-link-item"><a href="../certificates/index.html">Certificates</a></li>
+            <li class="om-footer-link-item"><a href="../contact/index.html">Contact Us</a></li>
+            <li class="om-footer-link-item"><a href="../get-quote/index.html">Get Quote</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="om-footer-col">
+          <h3 class="om-footer-title">Our Products</h3>
+          <ul class="om-footer-links">
+            <li class="om-footer-link-item"><a href="pharma-bottles/index.html">Pharma Bottles</a></li>
+            <li class="om-footer-link-item"><a href="chemical-bottles/index.html">Chemical Bottles</a></li>
+            <li class="om-footer-link-item"><a href="attar-bottles/index.html">Attar Bottles</a></li>
+            <li class="om-footer-link-item"><a href="perfume-bottles/index.html">Perfume Bottles</a></li>
+            <li class="om-footer-link-item"><a href="water-bottles/index.html">Water Bottles</a></li>
+            <li class="om-footer-link-item"><a href="dome-lights/index.html">Dome Lights</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="om-footer-col">
+          <h3 class="om-footer-title">Contact Information</h3>
+          <ul class="om-footer-contact-list">
+            <li class="om-footer-contact-item">
+              <div class="om-contact-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="om-contact-content">
+                <span class="om-contact-label">OM Bottles Mfg Company</span>
+                <span class="om-contact-value">Mahaveer Industrial Estate, Naik Pada, Waliv, Vasai East, PIN 401208, Maharashtra, India.</span>
+                <a href="https://www.google.com/maps/search/?api=1&query=Mahaveer+Industrial+Estate+Naik+Pada+Waliv+Vasai+East+401208+Maharashtra+India" target="_blank" rel="noopener noreferrer" class="om-directions-link">
+                  <span>Get Directions</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </li>
+            <li class="om-footer-contact-item">
+              <div class="om-contact-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="om-contact-content">
+                <span class="om-contact-label">Primary Contact / WhatsApp</span>
+                <div class="om-contact-row">
+                  <a href="tel:+918898419781" class="om-contact-value">+91 8898419781</a>
+                  <button type="button" class="om-btn-copy" data-copy="+918898419781" aria-label="Copy phone number">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  </button>
+                </div>
+                <a href="https://wa.me/918898419781?text=Hello%20OM%20Bottles%20MFG%20COMPANY%2C%20I%20would%20like%20to%20enquire%20about%20your%20products." target="_blank" rel="noopener noreferrer" class="om-whatsapp-link">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
+                  <span>Chat on WhatsApp</span>
+                </a>
+              </div>
+            </li>
+            <li class="om-footer-contact-item">
+              <div class="om-contact-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="om-contact-content">
+                <span class="om-contact-label">Email Enquiry</span>
+                <div class="om-contact-row">
+                  <a href="mailto:ombottlesdeepak@gmail.com" class="om-contact-value">ombottlesdeepak@gmail.com</a>
+                  <button type="button" class="om-btn-copy" data-copy="ombottlesdeepak@gmail.com" aria-label="Copy email address">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="om-footer-bottom">
+        <p class="om-footer-copyright">&copy; <span id="currentYear"></span> OM Bottles MFG COMPANY. All Rights Reserved.</p>
+        <ul class="om-footer-bottom-links">
+          <li><a href="../contact/index.html">Contact</a></li>
+          <li><a href="../get-quote/index.html">Request Quote</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       GLOBAL FLOATING CONTACT BUTTONS (WHATSAPP & CALL NOW)
+       ======================================================================== -->
   <aside class="om-floating-contact-container" aria-label="Quick Contact Actions">
-    <a 
-      href="https://wa.me/918898419781?text=Hello%20OM%20Bottles%20MFG%20COMPANY%2C%20I%20would%20like%20to%20enquire%20about%20your%20products." 
-      target="_blank" 
-      rel="noopener noreferrer" 
-      class="om-floating-btn om-floating-whatsapp" 
-      aria-label="Chat with OM Bottles MFG COMPANY on WhatsApp"
-    >
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
-      </svg>
+    <a href="https://wa.me/918898419781?text=Hello%20OM%20Bottles%20MFG%20COMPANY%2C%20I%20would%20like%20to%20enquire%20about%20your%20products." target="_blank" rel="noopener noreferrer" class="om-floating-btn om-floating-whatsapp" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
       <span class="om-floating-tooltip">Chat on WhatsApp</span>
     </a>
-    <a 
-      href="tel:+918898419781" 
-      class="om-floating-btn om-floating-call" 
-      aria-label="Call OM Bottles MFG COMPANY now"
-    >
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-      </svg>
+    <a href="tel:+918898419781" class="om-floating-btn om-floating-call" aria-label="Call Now">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
       <span class="om-floating-tooltip">Call Now</span>
     </a>
   </aside>
 
+  <!-- Scripts -->
   <script type="module" src="../../components/navbar/navbar.js"></script>
+  <script type="module" src="../../components/footer/footer.js"></script>
+  <script type="module" src="products.js"></script>
 </body>
 </html>
-
