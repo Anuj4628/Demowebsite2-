@@ -532,15 +532,27 @@
 }
 
 .om-mobile-submenu {
-  display: none;
+  display: flex;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
   flex-direction: column;
   background-color: var(--color-light-bg, #F3F6FA);
-  padding: 6px 0;
-  border-top: 1px solid var(--color-light-border, #E5E9F0);
+  border-top: 1px solid transparent;
+  transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.25s ease,
+              visibility 0.25s ease,
+              padding 0.25s ease;
+  padding: 0;
 }
 
 .om-mobile-nav-item.is-expanded .om-mobile-submenu {
-  display: flex;
+  max-height: 480px;
+  opacity: 1;
+  visibility: visible;
+  padding: 6px 0;
+  border-top-color: var(--color-light-border, #E5E9F0);
 }
 
 .om-mobile-sublink {

@@ -10,8 +10,17 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
-  z-index: 9999;
+  z-index: 990;
   pointer-events: auto;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+/* Hide floating contact buttons when mobile menu drawer is open */
+body:has(.om-mobile-drawer.is-active) .om-floating-contact-container,
+.om-mobile-drawer.is-active ~ .om-floating-contact-container {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 /* Base floating button style */

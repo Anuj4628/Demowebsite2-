@@ -24,7 +24,7 @@
 
     let currentIndex = 0;
     let autoplayTimer = null;
-    const AUTOPLAY_INTERVAL = 5500; // 5.5 seconds per slide
+    const AUTOPLAY_INTERVAL = 4500; // 4.5 seconds per slide (smooth & lively)
 
     // Update active slide visual & accessibility states
     function showSlide(index) {

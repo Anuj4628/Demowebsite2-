@@ -1124,6 +1124,12 @@
     gap: 10px;
   }
 
+  @media (max-width: 440px) {
+    .om-sizes-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
   .om-size-card {
     padding: 14px 8px;
   }

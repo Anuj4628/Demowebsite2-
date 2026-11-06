@@ -128,7 +128,7 @@
 .om-industries-track {
   display: flex;
   width: max-content;
-  animation: omIndustriesMarquee 38s linear infinite;
+  animation: omIndustriesMarquee 26s linear infinite;
   will-change: transform;
 }
 
@@ -148,8 +148,9 @@
   }
 }
 
-/* Smooth pause on mouse hover */
-.om-industries-slider-wrap:hover .om-industries-track {
+/* Smooth pause on mouse hover and touch */
+.om-industries-slider-wrap:hover .om-industries-track,
+.om-industries-slider-wrap:active .om-industries-track {
   animation-play-state: paused;
 }
 
@@ -417,7 +418,7 @@
   }
 
   .om-industries-track {
-    animation-duration: 32s;
+    animation-duration: 22s;
   }
 
   .om-industries-bottom-cta {
@@ -475,6 +476,10 @@
 
   .om-industry-card {
     width: 275px;
+  }
+
+  .om-industries-track {
+    animation-duration: 18s;
   }
 
   .om-industry-body {

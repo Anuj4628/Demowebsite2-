@@ -10,6 +10,7 @@
  */
 
 export const NAVBAR_PRODUCT_CATEGORIES = [
+  { name: 'All Aluminium Bottles', slug: 'products', path: 'index.html' },
   { name: 'Pharma Bottles', slug: 'pharma-bottles', path: 'pharma-bottles/index.html' },
   { name: 'Chemical Bottles', slug: 'chemical-bottles', path: 'chemical-bottles/index.html' },
   { name: 'Attar Bottles', slug: 'attar-bottles', path: 'attar-bottles/index.html' },
@@ -51,7 +52,10 @@ export function initNavbar() {
     if (dropdownMenu) {
       dropdownMenu.innerHTML = NAVBAR_PRODUCT_CATEGORIES.map(cat => {
         const catUrl = `${baseProductsDir}${cat.path}`;
-        const isActive = currentPath.includes(`/${cat.slug}`);
+        const isProductsRoot = cat.slug === 'products';
+        const isActive = isProductsRoot
+          ? (currentPath.endsWith('/products') || currentPath.endsWith('/products/') || currentPath.endsWith('/products/index.html'))
+          : (!currentPath.endsWith('/products/index.html') && currentPath.includes(`/${cat.slug}`));
         return `
           <div class="om-dropdown-item" role="none">
             <a href="${catUrl}" class="om-dropdown-link ${isActive ? 'is-active' : ''}" role="menuitem">
@@ -69,7 +73,10 @@ export function initNavbar() {
     if (mobileSubmenu) {
       mobileSubmenu.innerHTML = NAVBAR_PRODUCT_CATEGORIES.map(cat => {
         const catUrl = `${baseProductsDir}${cat.path}`;
-        const isActive = currentPath.includes(`/${cat.slug}`);
+        const isProductsRoot = cat.slug === 'products';
+        const isActive = isProductsRoot
+          ? (currentPath.endsWith('/products') || currentPath.endsWith('/products/') || currentPath.endsWith('/products/index.html'))
+          : (!currentPath.endsWith('/products/index.html') && currentPath.includes(`/${cat.slug}`));
         return `
           <a href="${catUrl}" class="om-mobile-sublink ${isActive ? 'is-active' : ''}">
             ${cat.name}
@@ -155,6 +162,7 @@ export function initNavbar() {
     drawer.classList.add('is-active');
     backdrop.classList.add('is-active');
     document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
   }
 
   function closeMobileMenu() {
@@ -164,6 +172,7 @@ export function initNavbar() {
     drawer.classList.remove('is-active');
     backdrop.classList.remove('is-active');
     document.body.style.overflow = '';
+    document.documentElement.style.overflow = '';
   }
 
   if (hamburger) {

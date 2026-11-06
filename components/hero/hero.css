@@ -21,16 +21,17 @@
   position: relative;
   width: 100%;
   height: 100%;
+  display: grid;
+  grid-template-areas: "slide";
 }
 
 .om-hero-slide {
-  position: absolute;
-  top: 0;
-  left: 0;
+  grid-area: slide;
   width: 100%;
   height: 100%;
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
   z-index: 1;
   transition: opacity 0.75s cubic-bezier(0.4, 0, 0.2, 1),
               visibility 0.75s cubic-bezier(0.4, 0, 0.2, 1);
@@ -42,6 +43,7 @@
 .om-hero-slide.is-active {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
   z-index: 2;
 }
 
@@ -451,16 +453,22 @@
     padding: 56px 0 68px 0;
   }
 
-  /* Switch background to vertical brand red & navy gradient */
-  .om-slide-1,
-  .om-slide-2,
+  /* Responsive background gradients preserving branding */
+  .om-slide-1 {
+    background: linear-gradient(180deg, #D71920 0%, #B81419 45%, #073B78 75%, #052A56 100%);
+  }
+
+  .om-slide-2 {
+    background: linear-gradient(180deg, #073B78 0%, #0B4A8B 40%, #D71920 70%, #B81419 100%);
+  }
+
   .om-slide-3 {
     background: linear-gradient(180deg, #D71920 0%, #B81419 45%, #073B78 75%, #052A56 100%);
   }
 
   .om-hero-container {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 36px;
     padding: 0 28px;
     text-align: center;
   }
@@ -469,13 +477,14 @@
     grid-template-columns: 1fr;
   }
 
+  /* Slide 2 Alternating pattern: visual first, content second */
   .om-slide-reverse .om-hero-content {
-    order: 1;
+    order: 2;
     padding-left: 0;
   }
 
   .om-slide-reverse .om-hero-visual {
-    order: 2;
+    order: 1;
   }
 
   .om-hero-content {
@@ -487,8 +496,10 @@
   }
 
   .om-hero-title {
-    font-size: 44px;
+    font-size: clamp(34px, 4.8vw, 46px);
     max-width: 650px;
+    word-break: normal;
+    overflow-wrap: break-word;
   }
 
   .om-hero-desc {
@@ -503,11 +514,14 @@
 
   .om-hero-visual {
     max-height: 480px;
+    width: 100%;
   }
 
   .om-hero-image-frame {
-    max-width: 640px;
+    max-width: 620px;
+    aspect-ratio: 16 / 10;
     margin: 0 auto;
+    object-fit: cover;
   }
 
   .om-arrow-prev {
@@ -527,18 +541,20 @@
 /* Mobile Screens (Under 768px) */
 @media (max-width: 767px) {
   .om-hero {
-    padding: 36px 0 60px 0;
+    padding: 32px 0 58px 0;
   }
 
   .om-hero-container {
-    padding: 0 18px;
-    gap: 32px;
+    padding: 0 16px;
+    gap: 24px;
   }
 
   .om-hero-title {
-    font-size: 34px;
-    line-height: 1.15;
-    margin-bottom: 16px;
+    font-size: clamp(26px, 6.8vw, 36px);
+    line-height: 1.16;
+    margin-bottom: 14px;
+    word-break: normal;
+    overflow-wrap: break-word;
   }
 
   .om-hero-badge {
@@ -548,39 +564,76 @@
   }
 
   .om-hero-desc {
-    font-size: 16px;
+    font-size: 15.5px;
     line-height: 1.55;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
   }
 
   .om-hero-actions {
     flex-direction: column;
+    align-items: center;
     width: 100%;
-    gap: 14px;
+    gap: 12px;
   }
 
   .om-btn-hero-primary,
   .om-btn-hero-secondary {
     width: 100%;
-    padding: 15px 24px;
-    font-size: 16.5px;
+    max-width: 320px;
+    padding: 14px 22px;
+    font-size: 16px;
   }
 
   .om-hero-visual {
-    max-height: 360px;
+    max-height: 380px;
+    width: 100%;
+  }
+
+  .om-hero-image-frame {
+    max-width: 500px;
+    aspect-ratio: 16 / 10;
+    border-radius: 14px;
+    border-width: 3px;
   }
 
   .om-slider-arrow {
-    display: none; /* Mobile swipe and bullets for touch ergonomics */
+    display: none; /* Mobile touch swipe & bullets for touch ergonomics */
   }
 
   .om-slider-pagination {
-    bottom: 16px;
-    padding: 8px 16px;
-    gap: 10px;
+    bottom: 14px;
+    padding: 6px 14px;
+    gap: 8px;
+  }
+
+  .om-pagination-bullet {
+    padding: 8px 4px;
   }
 
   .om-pagination-bullet.is-active {
     width: 28px;
+  }
+}
+
+/* Small Mobile Screens (320px to 380px) */
+@media (max-width: 380px) {
+  .om-hero-title {
+    font-size: 24px;
+  }
+
+  .om-hero-badge {
+    font-size: 11px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+  }
+
+  .om-hero-desc {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .om-hero-container {
+    padding: 0 12px;
+    gap: 18px;
   }
 }
