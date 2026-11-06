@@ -74,11 +74,26 @@
       </button>
     </div>
     <ul class="om-mobile-nav-list">
-      <li class="om-mobile-nav-item"><a href="../../../index.html" class="om-mobile-nav-link">Home</a></li>
-      <li class="om-mobile-nav-item"><a href="../../about/index.html" class="om-mobile-nav-link">About Us</a></li>
-      <li class="om-mobile-nav-item is-active"><a href="../index.html" class="om-mobile-nav-link">Products</a></li>
-      <li class="om-mobile-nav-item"><a href="../../certificates/index.html" class="om-mobile-nav-link">Certificates</a></li>
-      <li class="om-mobile-nav-item"><a href="../../contact/index.html" class="om-mobile-nav-link">Contact Us</a></li>
+      <li class="om-mobile-nav-item" data-page="home"><a href="../../../index.html" class="om-mobile-nav-link">Home</a></li>
+      <li class="om-mobile-nav-item" data-page="about"><a href="../../about/index.html" class="om-mobile-nav-link">About Us</a></li>
+      <li class="om-mobile-nav-item has-accordion is-active" data-page="products">
+        <button class="om-mobile-accordion-btn" type="button" aria-expanded="true">
+          <span>Products</span>
+          <svg class="om-mobile-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="om-mobile-submenu">
+          <a href="../pharma-bottles/index.html" class="om-mobile-sublink">Pharma Bottles</a>
+          <a href="../chemical-bottles/index.html" class="om-mobile-sublink">Chemical Bottles</a>
+          <a href="../attar-bottles/index.html" class="om-mobile-sublink">Attar Bottles</a>
+          <a href="../perfume-bottles/index.html" class="om-mobile-sublink">Perfume Bottles</a>
+          <a href="../water-bottles/index.html" class="om-mobile-sublink">Water Bottles</a>
+          <a href="../dome-lights/index.html" class="om-mobile-sublink is-active">Aluminium Dome Lights</a>
+        </div>
+      </li>
+      <li class="om-mobile-nav-item" data-page="certificates"><a href="../../certificates/index.html" class="om-mobile-nav-link">Certificates</a></li>
+      <li class="om-mobile-nav-item" data-page="contact"><a href="../../contact/index.html" class="om-mobile-nav-link">Contact Us</a></li>
     </ul>
     <div class="om-mobile-drawer-footer">
       <a href="../../get-quote/index.html" class="om-mobile-btn-quote"><span>Get Quote</span></a>
