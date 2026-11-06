@@ -5,16 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us — OM BOTTLES MFG COMPANY</title>
   <link rel="icon" type="image/png" href="../../assets/images/logo/om-bottles-logo.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core & Component Stylesheets -->
   <link rel="stylesheet" href="../../styles/variables.css">
   <link rel="stylesheet" href="../../styles/main.css">
   <link rel="stylesheet" href="../../components/navbar/navbar.css">
+  <link rel="stylesheet" href="../../components/cta/cta.css">
+  <link rel="stylesheet" href="../../components/footer/footer.css">
+  <link rel="stylesheet" href="contact.css">
 </head>
 <body>
 
-  <!-- OM BOTTLES RESPONSIVE NAVBAR -->
+  <!-- ========================================================================
+       PREMIUM RESPONSIVE NAVBAR
+       ======================================================================== -->
   <header class="om-header" role="banner">
     <div class="om-navbar-container">
       
@@ -45,22 +54,12 @@
               </svg>
             </a>
             <div class="om-dropdown-menu" role="menu">
-              <div class="om-dropdown-item" role="none">
-                <a href="../products/index.html#aluminium-bottles" class="om-dropdown-link" role="menuitem">
-                  <span>Aluminium Bottles</span>
-                  <svg class="om-dropdown-arrow" viewBox="0 0 24 24" fill="none">
-                    <polyline points="9 18 15 12 9 6"></polyline>
-                  </svg>
-                </a>
-              </div>
-              <div class="om-dropdown-item" role="none">
-                <a href="../products/index.html#dome-lights" class="om-dropdown-link" role="menuitem">
-                  <span>Dome Lights</span>
-                  <svg class="om-dropdown-arrow" viewBox="0 0 24 24" fill="none">
-                    <polyline points="9 18 15 12 9 6"></polyline>
-                  </svg>
-                </a>
-              </div>
+              <div class="om-dropdown-item"><a href="../products/pharma-bottles/index.html" class="om-dropdown-link">Pharma Bottles</a></div>
+              <div class="om-dropdown-item"><a href="../products/chemical-bottles/index.html" class="om-dropdown-link">Chemical Bottles</a></div>
+              <div class="om-dropdown-item"><a href="../products/attar-bottles/index.html" class="om-dropdown-link">Attar Bottles</a></div>
+              <div class="om-dropdown-item"><a href="../products/perfume-bottles/index.html" class="om-dropdown-link">Perfume Bottles</a></div>
+              <div class="om-dropdown-item"><a href="../products/water-bottles/index.html" class="om-dropdown-link">Water Bottles</a></div>
+              <div class="om-dropdown-item"><a href="../products/dome-lights/index.html" class="om-dropdown-link">Aluminium Dome Lights</a></div>
             </div>
           </li>
           <li class="om-nav-item" data-page="certificates">
@@ -101,7 +100,7 @@
     <div class="om-mobile-drawer-header">
       <img src="../../assets/images/logo/om-bottles-logo.png" alt="OM BOTTLES MFG COMPANY" class="om-mobile-logo-img" />
       <button class="om-mobile-close-btn" type="button" aria-label="Close menu">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
           <line x1="18" y1="6" x2="6" y2="18"></line>
           <line x1="6" y1="6" x2="18" y2="18"></line>
         </svg>
@@ -115,17 +114,8 @@
       <li class="om-mobile-nav-item" data-page="about">
         <a href="../about/index.html" class="om-mobile-nav-link">About Us</a>
       </li>
-      <li class="om-mobile-nav-item has-accordion" data-page="products">
-        <button class="om-mobile-accordion-btn" type="button" aria-expanded="false">
-          <span>Products</span>
-          <svg class="om-mobile-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-            <polyline points="6 9 12 15 18 9"></polyline>
-          </svg>
-        </button>
-        <div class="om-mobile-submenu">
-          <a href="../products/index.html#aluminium-bottles" class="om-mobile-sublink">Aluminium Bottles</a>
-          <a href="../products/index.html#dome-lights" class="om-mobile-sublink">Dome Lights</a>
-        </div>
+      <li class="om-mobile-nav-item" data-page="products">
+        <a href="../products/index.html" class="om-mobile-nav-link">Products</a>
       </li>
       <li class="om-mobile-nav-item" data-page="certificates">
         <a href="../certificates/index.html" class="om-mobile-nav-link">Certificates</a>
@@ -146,7 +136,711 @@
     </div>
   </aside>
 
-  <!-- GLOBAL FLOATING CONTACT BUTTONS (WHATSAPP & CALL NOW) -->
+  <!-- ========================================================================
+       SECTION 1 – PREMIUM CONTACT HERO SECTION
+       ======================================================================== -->
+  <section class="om-contact-hero" aria-labelledby="contact-hero-title">
+    <div class="om-contact-container">
+      
+      <!-- Breadcrumb Navigation -->
+      <nav class="om-contact-breadcrumb" aria-label="Breadcrumb">
+        <a href="../../index.html">Home</a>
+        <span class="om-contact-breadcrumb-sep">/</span>
+        <span class="om-contact-breadcrumb-current">Contact Us</span>
+      </nav>
+
+      <div class="om-contact-hero-grid">
+        <!-- Left Content -->
+        <div class="om-contact-hero-content">
+          <div class="om-section-badge om-badge-red">
+            <span>CONTACT OUR TEAM</span>
+          </div>
+
+          <h1 id="contact-hero-title" class="om-contact-hero-title">
+            Let's Connect & Build <span class="highlight-red">Something Better Together.</span>
+          </h1>
+
+          <p class="om-contact-hero-desc">
+            Have questions about our aluminium bottles, manufacturing capabilities or business requirements? Our team is always ready to assist you with product information, enquiries and business support.
+          </p>
+
+          <div class="om-contact-hero-actions">
+            <a href="#enquiry-section" class="om-btn-contact-primary">
+              <span>Get In Touch</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <a href="tel:8898419781" class="om-btn-contact-secondary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>Call Our Team</span>
+            </a>
+          </div>
+
+          <!-- Supporting Highlights -->
+          <div class="om-contact-hero-highlights">
+            <div class="om-hero-highlight-item">
+              <span class="om-highlight-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <span>Quick Business Assistance</span>
+            </div>
+
+            <div class="om-hero-highlight-item">
+              <span class="om-highlight-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <span>Product Enquiries</span>
+            </div>
+
+            <div class="om-hero-highlight-item">
+              <span class="om-highlight-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <span>Reliable Customer Support</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual (Realistic Indian Customer Support Executive) -->
+        <div class="om-contact-hero-visual">
+          <div class="om-hero-image-card">
+            <picture>
+              <source srcset="../../assets/images/contact/contact-support-hero.webp" type="image/webp">
+              <img 
+                src="../../assets/images/contact/contact-support-hero.jpg" 
+                alt="OM Bottles MFG Company Customer Support Executive assisting a client" 
+                width="800" 
+                height="600"
+                fetchpriority="high"
+                loading="eager"
+              />
+            </picture>
+
+            <!-- Floating Trust Badge -->
+            <div class="om-hero-floating-badge">
+              <div class="om-floating-badge-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="om-floating-badge-title">Direct Manufacturer Support</div>
+                <div class="om-floating-badge-desc">Fast Response for Commercial Inquiries</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 2 – COMPLETE CONTACT INFORMATION (FULL INDUSTRIAL RED BACKGROUND)
+       ======================================================================== -->
+  <section class="om-contact-info-section" aria-labelledby="contact-info-heading">
+    <div class="om-contact-container">
+      
+      <div class="om-contact-info-header">
+        <div class="om-section-badge om-badge-white">
+          <span>CONNECT DIRECTLY</span>
+        </div>
+        <h2 id="contact-info-heading" class="om-contact-info-title">
+          We're Here to Help You
+        </h2>
+        <p class="om-contact-info-subtitle">
+          Connect with OM Bottles MFG Company for product enquiries, manufacturing information and business opportunities.
+        </p>
+      </div>
+
+      <!-- 2x2 Contact Grid -->
+      <div class="om-contact-cards-grid">
+        
+        <!-- CARD 1 – PRIMARY CONTACT NUMBER -->
+        <article class="om-contact-card">
+          <div>
+            <div class="om-contact-card-top">
+              <div class="om-contact-card-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="om-contact-card-meta">
+                <span class="om-contact-card-label">Primary Contact</span>
+                <div class="om-contact-card-value" id="primaryPhoneVal">8898419781</div>
+              </div>
+            </div>
+          </div>
+          <div class="om-contact-card-actions">
+            <a href="tel:8898419781" class="om-card-btn-action om-card-btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>Call Now</span>
+            </a>
+            <button type="button" class="om-card-btn-action om-card-btn-secondary" data-copy-target="primaryPhoneVal" data-copy-label="Primary phone copied to clipboard!">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Number</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- CARD 2 – ALTERNATE CONTACT NUMBER -->
+        <article class="om-contact-card">
+          <div>
+            <div class="om-contact-card-top">
+              <div class="om-contact-card-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="om-contact-card-meta">
+                <span class="om-contact-card-label">Alternate Contact</span>
+                <div class="om-contact-card-value" id="alternatePhoneVal">9984564073</div>
+              </div>
+            </div>
+          </div>
+          <div class="om-contact-card-actions">
+            <a href="tel:9984564073" class="om-card-btn-action om-card-btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>Call Now</span>
+            </a>
+            <button type="button" class="om-card-btn-action om-card-btn-secondary" data-copy-target="alternatePhoneVal" data-copy-label="Alternate phone copied to clipboard!">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Number</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- CARD 3 – EMAIL ADDRESS -->
+        <article class="om-contact-card">
+          <div>
+            <div class="om-contact-card-top">
+              <div class="om-contact-card-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="om-contact-card-meta">
+                <span class="om-contact-card-label">Official Email Address</span>
+                <div class="om-contact-card-value" id="emailVal" style="font-size: clamp(1.05rem, 1.8vw, 1.3rem);">ombottlesdeepak@gmail.com</div>
+              </div>
+            </div>
+          </div>
+          <div class="om-contact-card-actions">
+            <a href="mailto:ombottlesdeepak@gmail.com" class="om-card-btn-action om-card-btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Send Email</span>
+            </a>
+            <button type="button" class="om-card-btn-action om-card-btn-secondary" data-copy-target="emailVal" data-copy-label="Email address copied to clipboard!">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Email</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- CARD 4 – COMPANY ADDRESS -->
+        <article class="om-contact-card">
+          <div>
+            <div class="om-contact-card-top">
+              <div class="om-contact-card-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="om-contact-card-meta">
+                <span class="om-contact-card-label">Our Manufacturing Location</span>
+                <div class="om-contact-card-value-sm" id="addressVal">
+                  Mahaveer Industrial Estate, Naik Pada, Waliv, Vasai East, Maharashtra, PIN 401208, India.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="om-contact-card-actions">
+            <a 
+              href="https://www.google.com/maps/search/?api=1&query=Mahaveer+Industrial+Estate+Naik+Pada+Waliv+Vasai+East+401208+Maharashtra+India" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="om-card-btn-action om-card-btn-primary"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+              </svg>
+              <span>Get Directions</span>
+            </a>
+            <button type="button" class="om-card-btn-action om-card-btn-secondary" data-copy-target="addressVal" data-copy-label="Address copied to clipboard!">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Address</span>
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 3 – GET A QUOTE / BUSINESS ENQUIRY + GOOGLE MAP
+       ======================================================================== -->
+  <section class="om-contact-enquiry-section" id="enquiry-section" aria-labelledby="enquiry-heading">
+    <div class="om-contact-container">
+      
+      <div class="om-enquiry-grid">
+        
+        <!-- LEFT: BUSINESS ENQUIRY FORM -->
+        <div class="om-enquiry-form-card">
+          <div class="om-enquiry-header">
+            <div class="om-section-badge"><span>BUSINESS ENQUIRY</span></div>
+            <h2 id="enquiry-heading" class="om-enquiry-title">Get a Quote</h2>
+            <p class="om-enquiry-subtitle">Tell us about your requirements. Our team will be happy to assist you.</p>
+          </div>
+
+          <form id="enquiryForm" novalidate>
+            <div class="om-form-row">
+              <div class="om-form-group">
+                <label for="fullName" class="om-form-label">Full Name <span class="req">*</span></label>
+                <input type="text" id="fullName" class="om-form-input" placeholder="e.g. Rahul Sharma" required autocomplete="name" />
+                <div class="om-form-error">Please enter your full name (minimum 2 characters).</div>
+              </div>
+
+              <div class="om-form-group">
+                <label for="companyName" class="om-form-label">Company Name <span class="req">*</span></label>
+                <input type="text" id="companyName" class="om-form-input" placeholder="e.g. Apex Biotech Ltd" required autocomplete="organization" />
+                <div class="om-form-error">Please enter your company or business name.</div>
+              </div>
+            </div>
+
+            <div class="om-form-row">
+              <div class="om-form-group">
+                <label for="emailAddress" class="om-form-label">Email Address <span class="req">*</span></label>
+                <input type="email" id="emailAddress" class="om-form-input" placeholder="e.g. rahul@apexbiotech.com" required autocomplete="email" />
+                <div class="om-form-error">Please enter a valid email address.</div>
+              </div>
+
+              <div class="om-form-group">
+                <label for="phoneNumber" class="om-form-label">Phone Number <span class="req">*</span></label>
+                <input type="tel" id="phoneNumber" class="om-form-input" placeholder="e.g. +91 98765 43210" required autocomplete="tel" />
+                <div class="om-form-error">Please enter a valid contact phone number.</div>
+              </div>
+            </div>
+
+            <div class="om-form-group">
+              <label for="productInterest" class="om-form-label">Product Interest <span class="req">*</span></label>
+              <select id="productInterest" class="om-form-select" required>
+                <option value="" disabled selected>Select an Aluminium Product Category</option>
+                <option value="Pharma Aluminium Bottles">Pharma Aluminium Bottles (10ml – 1000ml)</option>
+                <option value="Chemical Aluminium Bottles">Chemical Aluminium Bottles (100ml – 5 Litre)</option>
+                <option value="Attar & Traditional Fragrance Bottles">Attar & Traditional Fragrance Bottles (10ml – 500ml)</option>
+                <option value="Perfume & Fragrance Bottles">Perfume & Fragrance Bottles (25ml – 500ml)</option>
+                <option value="Aluminium Water Bottles">Aluminium Water Bottles (500ml – 1000ml)</option>
+                <option value="Aluminium Dome Lights">Aluminium Dome Lights & Architectural Reflectors</option>
+                <option value="Custom Spun Aluminium Packaging">Custom Spun Aluminium Packaging / Other Requirements</option>
+              </select>
+              <div class="om-form-error">Please select a product category of interest.</div>
+            </div>
+
+            <div class="om-form-group">
+              <label for="messageText" class="om-form-label">Your Message <span class="req">*</span></label>
+              <textarea id="messageText" class="om-form-textarea" placeholder="Please describe required quantities, preferred sizes, cap types, or custom finishing requirements..." required></textarea>
+              <div class="om-form-error">Please describe your requirement (minimum 5 characters).</div>
+            </div>
+
+            <button type="submit" class="om-btn-submit-enquiry">
+              <span>Submit Enquiry</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- RIGHT: GOOGLE MAP & LOCATION CARD -->
+        <div class="om-map-column-card">
+          <div class="om-map-header">
+            <div class="om-section-badge om-badge-red"><span>MANUFACTURING LOCATION</span></div>
+            <h3 class="om-map-title">Find Our Location</h3>
+            <p class="om-map-address">
+              <strong>OM Bottles MFG Company</strong><br>
+              Mahaveer Industrial Estate, Naik Pada, Waliv, Vasai East, Maharashtra 401208, India.
+            </p>
+            <a 
+              href="https://www.google.com/maps/search/?api=1&query=Mahaveer+Industrial+Estate+Naik+Pada+Waliv+Vasai+East+401208+Maharashtra+India" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="om-map-directions-btn"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+              </svg>
+              <span>Get Directions on Google Maps</span>
+            </a>
+          </div>
+
+          <!-- Responsive Google Map Iframe -->
+          <div class="om-map-frame-wrapper">
+            <iframe 
+              title="OM Bottles MFG Company Location Map"
+              src="https://maps.google.com/maps?q=Mahaveer+Industrial+Estate,+Naik+Pada,+Waliv,+Vasai+East,+Maharashtra+401208,+India&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade" 
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       TWO-OPTION SUBMISSION CONFIRMATION MODAL
+       ======================================================================== -->
+  <div class="om-enquiry-modal-backdrop" id="enquiryChannelModal" role="dialog" aria-modal="true" aria-labelledby="modalChoiceHeading" aria-hidden="true">
+    <div class="om-enquiry-modal">
+      <button type="button" class="om-modal-close-btn" aria-label="Close modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="om-modal-header">
+        <div class="om-modal-badge">READY TO SEND</div>
+        <h3 id="modalChoiceHeading" class="om-modal-title">
+          Choose How You'd Like to Send Your Enquiry
+        </h3>
+        <p class="om-modal-subtitle">
+          Your enquiry details have been prepared. Select your preferred channel below to connect directly with our sales team:
+        </p>
+      </div>
+
+      <div class="om-channel-options-grid">
+        
+        <!-- OPTION 1 – WHATSAPP -->
+        <a href="#" target="_blank" rel="noopener noreferrer" class="om-channel-option-card om-channel-whatsapp" id="btnChannelWhatsApp">
+          <div class="om-channel-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+            </svg>
+          </div>
+          <div class="om-channel-details">
+            <h4 class="om-channel-title">
+              <span>Send via WhatsApp</span>
+            </h4>
+            <p class="om-channel-desc">Continue your enquiry directly through WhatsApp with all details formatted for our sales team.</p>
+          </div>
+          <span class="om-channel-action-pill">Continue to WhatsApp &rarr;</span>
+        </a>
+
+        <!-- OPTION 2 – GMAIL / EMAIL -->
+        <a href="#" class="om-channel-option-card om-channel-email" id="btnChannelEmail">
+          <div class="om-channel-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <div class="om-channel-details">
+            <h4 class="om-channel-title">
+              <span>Send via Email</span>
+            </h4>
+            <p class="om-channel-desc">Send your business enquiry directly to our official email with all specifications pre-filled.</p>
+          </div>
+          <span class="om-channel-action-pill">Continue to Email &rarr;</span>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       SECTION 4 – WHY CONNECT WITH OM BOTTLES MFG COMPANY
+       ======================================================================== -->
+  <section class="om-why-connect-section" aria-labelledby="why-connect-heading">
+    <div class="om-contact-container">
+      
+      <div class="om-why-connect-header">
+        <div class="om-section-badge"><span>MANUFACTURING PARTNER</span></div>
+        <h2 id="why-connect-heading" class="om-why-connect-title">
+          Let's Start a Business Conversation
+        </h2>
+        <p class="om-why-connect-subtitle">
+          Whether you are looking for aluminium bottle manufacturing information, product specifications or a reliable manufacturing partner, our team is ready to understand your requirements.
+        </p>
+      </div>
+
+      <div class="om-why-connect-grid">
+        
+        <!-- CARD 1 -->
+        <div class="om-why-connect-card">
+          <div class="om-why-card-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+          </div>
+          <h3 class="om-why-card-title">Product Assistance</h3>
+          <p class="om-why-card-desc">
+            Get technical information about aluminium bottles, available products, neck finishes and precise specifications.
+          </p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="om-why-connect-card">
+          <div class="om-why-card-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+          </div>
+          <h3 class="om-why-card-title">Manufacturing Enquiries</h3>
+          <p class="om-why-card-desc">
+            Discuss batch manufacturing requirements, custom capacities, volume scales, and commercial business opportunities.
+          </p>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="om-why-connect-card">
+          <div class="om-why-card-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 class="om-why-card-title">Business Support</h3>
+          <p class="om-why-card-desc">
+            Connect directly with our dedicated operations team for supply timelines, export orders and technical assistance.
+          </p>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="om-why-connect-card">
+          <div class="om-why-card-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="om-why-card-title">Quick Communication</h3>
+          <p class="om-why-card-desc">
+            Reach our representatives swiftly through direct phone call, official email, or instant WhatsApp business chat.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 5 – PREMIUM CTA (Match Site CTA)
+       ======================================================================== -->
+  <section class="om-contact-cta-section" aria-labelledby="cta-heading">
+    <div class="om-contact-container">
+      <div class="om-contact-cta-container">
+        <div class="om-contact-cta-badge">CONNECT TODAY</div>
+        <h2 id="cta-heading" class="om-contact-cta-title">
+          Have a Requirement? Let's Talk!
+        </h2>
+        <p class="om-contact-cta-desc">
+          Connect with OM Bottles MFG Company today to discuss your product requirements and business enquiries.
+        </p>
+        <div class="om-contact-cta-buttons">
+          <a href="tel:+918898419781" class="om-btn-cta-white">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>Call Us Today</span>
+          </a>
+          <a href="#enquiry-section" class="om-btn-cta-red">
+            <span>Send an Enquiry</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 6 – WEBSITE FOOTER
+       ======================================================================== -->
+  <footer class="om-footer" role="contentinfo">
+    <div class="om-footer-container">
+      <div class="om-footer-grid">
+        
+        <!-- COLUMN 1: COMPANY LOGO & INTRODUCTION -->
+        <div class="om-footer-col om-footer-col-brand">
+          <a href="../../index.html" class="om-footer-logo-card" aria-label="OM Bottles MFG Company Home">
+            <img 
+              src="../../assets/images/logo/om-bottles-logo.png" 
+              alt="OM BOTTLES MFG COMPANY" 
+              class="om-footer-logo-img" 
+              width="220" 
+              height="48" 
+              loading="lazy" 
+            />
+          </a>
+          <p class="om-footer-intro">
+            OM Bottles MFG COMPANY offers aluminium bottle solutions for different packaging and industrial applications, along with a range of related products.
+          </p>
+          
+          <!-- Social Icons -->
+          <div class="om-footer-socials" aria-label="Social Media Links">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="om-social-link" aria-label="Follow OM Bottles on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="om-social-link" aria-label="Follow OM Bottles on Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="om-social-link" aria-label="Follow OM Bottles on Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- COLUMN 2: QUICK LINKS -->
+        <div class="om-footer-col">
+          <h3 class="om-footer-title">Quick Links</h3>
+          <ul class="om-footer-links">
+            <li class="om-footer-link-item"><a href="../../index.html">Home</a></li>
+            <li class="om-footer-link-item"><a href="../about/index.html">About Us</a></li>
+            <li class="om-footer-link-item"><a href="../products/index.html">Products</a></li>
+            <li class="om-footer-link-item"><a href="../certificates/index.html">Certificates</a></li>
+            <li class="om-footer-link-item"><a href="index.html">Contact Us</a></li>
+            <li class="om-footer-link-item"><a href="../get-quote/index.html">Get Quote</a></li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 3: OUR PRODUCTS -->
+        <div class="om-footer-col">
+          <h3 class="om-footer-title">Our Products</h3>
+          <ul class="om-footer-links">
+            <li class="om-footer-link-item"><a href="../products/pharma-bottles/index.html">Pharma Bottles</a></li>
+            <li class="om-footer-link-item"><a href="../products/chemical-bottles/index.html">Chemical Bottles</a></li>
+            <li class="om-footer-link-item"><a href="../products/attar-bottles/index.html">Attar Bottles</a></li>
+            <li class="om-footer-link-item"><a href="../products/perfume-bottles/index.html">Perfume Bottles</a></li>
+            <li class="om-footer-link-item"><a href="../products/water-bottles/index.html">Water Bottles</a></li>
+            <li class="om-footer-link-item"><a href="../products/dome-lights/index.html">Dome Lights</a></li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 4: CONTACT INFORMATION -->
+        <div class="om-footer-col">
+          <h3 class="om-footer-title">Contact Information</h3>
+          <ul class="om-footer-contact-list">
+            <li class="om-footer-contact-item">
+              <div class="om-contact-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="om-contact-content">
+                <span class="om-contact-label">OM Bottles Mfg Company</span>
+                <span class="om-contact-value">
+                  Mahaveer Industrial Estate, Naik Pada, Waliv, Vasai East, PIN 401208, Maharashtra, India.
+                </span>
+              </div>
+            </li>
+
+            <li class="om-footer-contact-item">
+              <div class="om-contact-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="om-contact-content">
+                <span class="om-contact-label">Phone Numbers</span>
+                <a href="tel:+918898419781" class="om-contact-value">+91 8898419781</a> / 
+                <a href="tel:+919984564073" class="om-contact-value">+91 9984564073</a>
+              </div>
+            </li>
+
+            <li class="om-footer-contact-item">
+              <div class="om-contact-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="om-contact-content">
+                <span class="om-contact-label">Email Address</span>
+                <a href="mailto:ombottlesdeepak@gmail.com" class="om-contact-value">ombottlesdeepak@gmail.com</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Copyright -->
+      <div class="om-footer-bottom">
+        <p class="om-footer-copyright">
+          &copy; <span id="currentYear"></span> OM Bottles MFG COMPANY. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       TOAST NOTIFICATION (COPY CLIPBOARD)
+       ======================================================================== -->
+  <div class="om-toast" id="omToast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="omToastMessage">Copied to clipboard!</span>
+  </div>
+
+  <!-- ========================================================================
+       GLOBAL FLOATING CONTACT BUTTONS (WHATSAPP & CALL NOW)
+       ======================================================================== -->
   <aside class="om-floating-contact-container" aria-label="Quick Contact Actions">
     <a 
       href="https://wa.me/918898419781?text=Hello%20OM%20Bottles%20MFG%20COMPANY%2C%20I%20would%20like%20to%20enquire%20about%20your%20products." 
@@ -172,7 +866,9 @@
     </a>
   </aside>
 
+  <!-- Page Scripts -->
   <script type="module" src="../../components/navbar/navbar.js"></script>
+  <script type="module" src="../../components/footer/footer.js"></script>
+  <script type="module" src="contact.js"></script>
 </body>
 </html>
-

@@ -1,0 +1,1230 @@
+/* ==========================================================================
+   OM BOTTLES MFG COMPANY — CONTACT US PAGE STYLESHEET
+   Brand Palette:
+   - Deep Navy Blue: #073B78
+   - Secondary Navy: #0B4A8B
+   - Industrial Red: #D71920
+   - Dark Slate / Navy Dark: #051B38
+   - Clean White: #FFFFFF
+   - Light Slate: #F1F5F9 / #F8FAFC
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   0. Breadcrumbs & Common Containers
+   -------------------------------------------------------------------------- */
+.om-contact-container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.om-contact-breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #64748B;
+  margin-bottom: 24px;
+}
+
+.om-contact-breadcrumb a {
+  color: #073B78;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.om-contact-breadcrumb a:hover {
+  color: #D71920;
+}
+
+.om-contact-breadcrumb-sep {
+  color: #CBD5E1;
+}
+
+.om-contact-breadcrumb-current {
+  color: #64748B;
+}
+
+/* Common Section Badges */
+.om-section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: rgba(7, 59, 120, 0.08);
+  border: 1px solid rgba(7, 59, 120, 0.15);
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #073B78;
+  margin-bottom: 14px;
+}
+
+.om-badge-red {
+  background: rgba(215, 25, 32, 0.08);
+  border-color: rgba(215, 25, 32, 0.2);
+  color: #D71920;
+}
+
+.om-badge-white {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #FFFFFF;
+}
+
+.highlight-red {
+  color: #D71920;
+}
+
+.highlight-white {
+  color: #FFFFFF;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 1: PREMIUM CONTACT HERO SECTION
+   -------------------------------------------------------------------------- */
+.om-contact-hero {
+  position: relative;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+  padding: 40px 0 70px;
+  overflow: hidden;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.om-contact-hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.95fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.om-contact-hero-content {
+  max-width: 620px;
+}
+
+.om-contact-hero-title {
+  font-size: clamp(2.2rem, 4vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.18;
+  color: #073B78;
+  margin-bottom: 18px;
+  letter-spacing: -0.02em;
+}
+
+.om-contact-hero-desc {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #475569;
+  margin-bottom: 30px;
+}
+
+.om-contact-hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.om-btn-contact-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #D71920;
+  color: #FFFFFF;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid #D71920;
+  box-shadow: 0 4px 14px rgba(215, 25, 32, 0.28);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.om-btn-contact-primary:hover {
+  background: #B8141A;
+  border-color: #B8141A;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(215, 25, 32, 0.36);
+  color: #FFFFFF;
+}
+
+.om-btn-contact-primary svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.2s ease;
+}
+
+.om-btn-contact-primary:hover svg {
+  transform: translateX(3px);
+}
+
+.om-btn-contact-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #FFFFFF;
+  color: #073B78;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid #073B78;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.om-btn-contact-secondary:hover {
+  background: #073B78;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(7, 59, 120, 0.2);
+}
+
+.om-btn-contact-secondary svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Supporting Highlights */
+.om-contact-hero-highlights {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #E2E8F0;
+}
+
+.om-hero-highlight-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.om-highlight-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(7, 59, 120, 0.1);
+  color: #073B78;
+  flex-shrink: 0;
+}
+
+.om-highlight-icon svg {
+  width: 13px;
+  height: 13px;
+}
+
+/* Right Visual (Customer Support Executive) */
+.om-contact-hero-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.om-hero-image-card {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #FFFFFF;
+  box-shadow: 0 25px 50px -12px rgba(7, 59, 120, 0.2), 0 0 0 1px rgba(7, 59, 120, 0.08);
+  aspect-ratio: 4 / 3.3;
+}
+
+.om-hero-image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.om-hero-image-card:hover img {
+  transform: scale(1.02);
+}
+
+/* Floating Trust Badge */
+.om-hero-floating-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 12px 18px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(7, 59, 120, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.om-floating-badge-icon {
+  width: 38px;
+  height: 38px;
+  background: #073B78;
+  color: #FFFFFF;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.om-floating-badge-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.om-floating-badge-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #073B78;
+  line-height: 1.2;
+}
+
+.om-floating-badge-desc {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #64748B;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 2: COMPLETE CONTACT INFORMATION (FULL INDUSTRIAL RED BACKGROUND)
+   -------------------------------------------------------------------------- */
+.om-contact-info-section {
+  background-color: #D71920;
+  padding: 80px 0;
+  color: #FFFFFF;
+  position: relative;
+}
+
+.om-contact-info-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 50px;
+}
+
+.om-contact-info-title {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+.om-contact-info-subtitle {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* 2x2 Contact Grid */
+.om-contact-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.om-contact-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.om-contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.om-contact-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.om-contact-card-icon-wrap {
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  background: #F1F5F9;
+  color: #073B78;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid #E2E8F0;
+  transition: all 0.25s ease;
+}
+
+.om-contact-card:hover .om-contact-card-icon-wrap {
+  background: #073B78;
+  color: #FFFFFF;
+  border-color: #073B78;
+}
+
+.om-contact-card-icon-wrap svg {
+  width: 26px;
+  height: 26px;
+}
+
+.om-contact-card-meta {
+  flex: 1;
+}
+
+.om-contact-card-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #D71920;
+  margin-bottom: 6px;
+}
+
+.om-contact-card-value {
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  font-weight: 800;
+  color: #073B78;
+  line-height: 1.35;
+  word-break: break-word;
+}
+
+.om-contact-card-value-sm {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.55;
+  color: #1E293B;
+}
+
+/* Action Buttons inside Card */
+.om-contact-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 18px;
+  border-top: 1px solid #F1F5F9;
+}
+
+.om-card-btn-action {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.om-card-btn-primary {
+  background: #073B78;
+  color: #FFFFFF;
+}
+
+.om-card-btn-primary:hover {
+  background: #052a56;
+  color: #FFFFFF;
+}
+
+.om-card-btn-primary svg {
+  width: 16px;
+  height: 16px;
+}
+
+.om-card-btn-secondary {
+  background: #F8FAFC;
+  color: #334155;
+  border: 1px solid #CBD5E1;
+}
+
+.om-card-btn-secondary:hover {
+  background: #E2E8F0;
+  color: #073B78;
+  border-color: #94A3B8;
+}
+
+.om-card-btn-secondary svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 3: GET A QUOTE / BUSINESS ENQUIRY + GOOGLE MAP
+   -------------------------------------------------------------------------- */
+.om-contact-enquiry-section {
+  background: #FFFFFF;
+  padding: 85px 0;
+}
+
+.om-enquiry-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.95fr;
+  gap: 48px;
+  align-items: stretch;
+}
+
+/* Left: Enquiry Form Card */
+.om-enquiry-form-card {
+  background: #FFFFFF;
+  border-radius: 18px;
+  border: 1px solid #E2E8F0;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(7, 59, 120, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.om-enquiry-header {
+  margin-bottom: 28px;
+}
+
+.om-enquiry-title {
+  font-size: clamp(1.8rem, 3vw, 2.3rem);
+  font-weight: 800;
+  color: #073B78;
+  margin-bottom: 8px;
+}
+
+.om-enquiry-subtitle {
+  font-size: 0.95rem;
+  color: #64748B;
+  line-height: 1.5;
+}
+
+/* Form Styles */
+.om-form-group {
+  margin-bottom: 20px;
+}
+
+.om-form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.om-form-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1E293B;
+  margin-bottom: 6px;
+}
+
+.om-form-label .req {
+  color: #D71920;
+}
+
+.om-form-input,
+.om-form-select,
+.om-form-textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid #CBD5E1;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.925rem;
+  color: #1E293B;
+  background-color: #FFFFFF;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.om-form-input:focus,
+.om-form-select:focus,
+.om-form-textarea:focus {
+  border-color: #073B78;
+  box-shadow: 0 0 0 3px rgba(7, 59, 120, 0.12);
+}
+
+.om-form-input.is-invalid,
+.om-form-select.is-invalid,
+.om-form-textarea.is-invalid {
+  border-color: #D71920;
+  background-color: #FEF2F2;
+}
+
+.om-form-error {
+  display: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #D71920;
+  margin-top: 4px;
+}
+
+.om-form-input.is-invalid ~ .om-form-error,
+.om-form-select.is-invalid ~ .om-form-error,
+.om-form-textarea.is-invalid ~ .om-form-error {
+  display: block;
+}
+
+.om-form-textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.om-btn-submit-enquiry {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  background: #D71920;
+  color: #FFFFFF;
+  padding: 15px 28px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(215, 25, 32, 0.25);
+  transition: all 0.25s ease;
+  margin-top: 10px;
+}
+
+.om-btn-submit-enquiry:hover {
+  background: #B8141A;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(215, 25, 32, 0.35);
+}
+
+.om-btn-submit-enquiry svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.2s ease;
+}
+
+.om-btn-submit-enquiry:hover svg {
+  transform: translateX(4px);
+}
+
+/* Right: Map Card */
+.om-map-column-card {
+  background: #F8FAFC;
+  border-radius: 18px;
+  border: 1px solid #E2E8F0;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(7, 59, 120, 0.05);
+}
+
+.om-map-header {
+  margin-bottom: 20px;
+}
+
+.om-map-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #073B78;
+  margin-bottom: 8px;
+}
+
+.om-map-address {
+  font-size: 0.925rem;
+  line-height: 1.55;
+  color: #475569;
+  margin-bottom: 14px;
+}
+
+.om-map-directions-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #073B78;
+  color: #FFFFFF;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 9px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.om-map-directions-btn:hover {
+  background: #D71920;
+  color: #FFFFFF;
+}
+
+.om-map-directions-btn svg {
+  width: 15px;
+  height: 15px;
+}
+
+.om-map-frame-wrapper {
+  flex: 1;
+  min-height: 380px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #CBD5E1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: relative;
+  margin-top: 16px;
+}
+
+.om-map-frame-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   CONFIRMATION MODAL (CHOOSE WHATSAPP OR EMAIL)
+   -------------------------------------------------------------------------- */
+.om-enquiry-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 27, 56, 0.75);
+  backdrop-filter: blur(6px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.om-enquiry-modal-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.om-enquiry-modal {
+  background: #FFFFFF;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 580px;
+  padding: 36px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+  position: relative;
+  transform: translateY(20px) scale(0.97);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.om-enquiry-modal-backdrop.is-open .om-enquiry-modal {
+  transform: translateY(0) scale(1);
+}
+
+.om-modal-close-btn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #F1F5F9;
+  color: #64748B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.om-modal-close-btn:hover {
+  background: #E2E8F0;
+  color: #073B78;
+}
+
+.om-modal-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.om-modal-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(7, 59, 120, 0.08);
+  color: #073B78;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 9999px;
+  margin-bottom: 10px;
+}
+
+.om-modal-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #073B78;
+  margin-bottom: 8px;
+  line-height: 1.25;
+}
+
+.om-modal-subtitle {
+  font-size: 0.9rem;
+  color: #64748B;
+  line-height: 1.5;
+}
+
+.om-channel-options-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.om-channel-option-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1.5px solid #E2E8F0;
+  background: #F8FAFC;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.om-channel-option-card:hover {
+  border-color: #073B78;
+  background: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(7, 59, 120, 0.08);
+}
+
+.om-channel-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #FFFFFF;
+}
+
+.om-channel-whatsapp .om-channel-icon-wrap {
+  background: #25D366;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.om-channel-email .om-channel-icon-wrap {
+  background: #073B78;
+  box-shadow: 0 4px 12px rgba(7, 59, 120, 0.3);
+}
+
+.om-channel-icon-wrap svg {
+  width: 28px;
+  height: 28px;
+}
+
+.om-channel-details {
+  flex: 1;
+}
+
+.om-channel-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #073B78;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.om-channel-desc {
+  font-size: 0.825rem;
+  color: #64748B;
+  line-height: 1.4;
+}
+
+.om-channel-action-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #073B78;
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.om-channel-option-card:hover .om-channel-action-pill {
+  background: #073B78;
+  color: #FFFFFF;
+  border-color: #073B78;
+}
+
+.om-channel-whatsapp:hover .om-channel-action-pill {
+  background: #25D366;
+  color: #FFFFFF;
+  border-color: #25D366;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 4: WHY CONNECT WITH OM BOTTLES MFG COMPANY
+   -------------------------------------------------------------------------- */
+.om-why-connect-section {
+  background: #F8FAFC;
+  padding: 85px 0;
+  border-top: 1px solid #E2E8F0;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.om-why-connect-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 50px;
+}
+
+.om-why-connect-title {
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  color: #073B78;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+.om-why-connect-subtitle {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #64748B;
+}
+
+.om-why-connect-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.om-why-connect-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 32px 24px;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.om-why-connect-card:hover {
+  transform: translateY(-6px);
+  border-color: #073B78;
+  box-shadow: 0 15px 35px rgba(7, 59, 120, 0.1);
+}
+
+.om-why-card-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: rgba(7, 59, 120, 0.08);
+  color: #073B78;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: all 0.25s ease;
+}
+
+.om-why-connect-card:hover .om-why-card-icon-wrap {
+  background: #D71920;
+  color: #FFFFFF;
+}
+
+.om-why-card-icon-wrap svg {
+  width: 26px;
+  height: 26px;
+}
+
+.om-why-card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #073B78;
+  margin-bottom: 10px;
+}
+
+.om-why-card-desc {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #64748B;
+  flex: 1;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 5: PREMIUM FINAL CTA (Match Site CTA)
+   -------------------------------------------------------------------------- */
+.om-contact-cta-section {
+  background: #073B78;
+  color: #FFFFFF;
+  padding: 80px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.om-contact-cta-section::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(215, 25, 32, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.om-contact-cta-container {
+  max-width: 720px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.om-contact-cta-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.om-contact-cta-title {
+  font-size: clamp(2rem, 3.8vw, 2.75rem);
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
+}
+
+.om-contact-cta-desc {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 32px;
+}
+
+.om-contact-cta-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.om-btn-cta-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #FFFFFF;
+  color: #073B78;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: all 0.25s ease;
+}
+
+.om-btn-cta-white:hover {
+  background: #F1F5F9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
+  color: #D71920;
+}
+
+.om-btn-cta-red {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #D71920;
+  color: #FFFFFF;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.25s ease;
+}
+
+.om-btn-cta-red:hover {
+  background: #B8141A;
+  transform: translateY(-2px);
+  color: #FFFFFF;
+}
+
+/* --------------------------------------------------------------------------
+   TOAST NOTIFICATION (COPY CLIPBOARD)
+   -------------------------------------------------------------------------- */
+.om-toast {
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: #051B38;
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 10001;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.om-toast.is-visible {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+.om-toast svg {
+  width: 18px;
+  height: 18px;
+  color: #22C55E;
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE MEDIA QUERIES
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .om-contact-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .om-contact-hero-content {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .om-contact-hero-actions {
+    justify-content: center;
+  }
+
+  .om-contact-hero-highlights {
+    justify-content: center;
+  }
+
+  .om-hero-image-card {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .om-enquiry-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .om-why-connect-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .om-contact-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .om-form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .om-enquiry-form-card,
+  .om-map-column-card {
+    padding: 24px;
+  }
+
+  .om-why-connect-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .om-contact-hero {
+    padding: 30px 0 50px;
+  }
+
+  .om-contact-info-section,
+  .om-contact-enquiry-section,
+  .om-why-connect-section,
+  .om-contact-cta-section {
+    padding: 60px 0;
+  }
+
+  .om-card-btn-action {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .om-contact-card-actions {
+    flex-direction: column;
+  }
+
+  .om-card-btn-action {
+    width: 100%;
+  }
+
+  .om-contact-hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .om-btn-contact-primary,
+  .om-btn-contact-secondary {
+    width: 100%;
+  }
+
+  .om-channel-option-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .om-channel-action-pill {
+    width: 100%;
+    justify-content: center;
+  }
+}
