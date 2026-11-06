@@ -21,9 +21,10 @@
   /* Navbar Layout Dimensions */
   --navbar-height-desktop: 88px;
   --navbar-height-mobile: 72px;
-  --logo-height-desktop: 52px;
-  --logo-height-tablet: 46px;
-  --logo-height-mobile: 40px;
+  --logo-height-desktop: 70px;
+  --logo-height-laptop: 64px;
+  --logo-height-tablet: 58px;
+  --logo-height-mobile: 52px;
 
   /* Shadows & Elevations */
   --shadow-subtle: 0 1px 3px rgba(7, 59, 120, 0.05);

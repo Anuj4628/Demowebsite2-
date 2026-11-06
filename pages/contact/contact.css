@@ -1275,9 +1275,11 @@
 .om-contact-footer .om-footer-logo-img {
   height: 64px;
   width: auto;
-  max-width: 250px;
+  max-width: 260px;
   object-fit: contain;
   display: block;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 /* 2. Contact Information Alignment & Typography */
