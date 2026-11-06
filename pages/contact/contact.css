@@ -1246,3 +1246,170 @@
   }
 }
 
+/* ==========================================================================
+   CONTACT PAGE FOOTER SPECIAL STYLING (.om-contact-footer)
+   Scope: Exclusive to Contact Us Page Footer
+   ========================================================================== */
+
+/* 1. Large Premium White Logo Card */
+.om-contact-footer .om-footer-logo-card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  padding: 16px 24px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18), 0 2px 6px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  width: fit-content;
+  max-width: 100%;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.om-contact-footer .om-footer-logo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.26);
+}
+
+.om-contact-footer .om-footer-logo-img {
+  height: 64px;
+  width: auto;
+  max-width: 250px;
+  object-fit: contain;
+  display: block;
+}
+
+/* 2. Contact Information Alignment & Typography */
+.om-contact-footer .om-footer-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.om-contact-footer .om-footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.om-contact-footer .om-contact-icon-wrap {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #D71920;
+  margin-top: 2px;
+}
+
+.om-contact-footer .om-contact-icon-wrap svg {
+  width: 18px;
+  height: 18px;
+}
+
+.om-contact-footer .om-contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-grow: 1;
+}
+
+.om-contact-footer .om-contact-label {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #94A3B8;
+  line-height: 1.2;
+}
+
+.om-contact-footer .om-contact-value {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: #F1F5F9;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.om-contact-footer a.om-contact-value:hover {
+  color: #D71920;
+}
+
+/* Dual Phone Numbers Alignment */
+.om-contact-footer .om-footer-phones-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+
+.om-contact-footer .om-footer-phone-link {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #F8FAFC;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.om-contact-footer .om-footer-phone-link:hover {
+  color: #D71920;
+}
+
+.om-contact-footer .om-footer-phone-divider {
+  color: #D71920;
+  font-weight: 700;
+  font-size: 14px;
+  user-select: none;
+}
+
+/* 3. Responsive Adjustments for Contact Footer */
+@media (max-width: 768px) {
+  .om-contact-footer .om-footer-logo-card {
+    padding: 14px 20px;
+    margin-bottom: 20px;
+  }
+
+  .om-contact-footer .om-footer-logo-img {
+    height: 54px;
+    max-width: 220px;
+  }
+
+  .om-contact-footer .om-footer-phones-group {
+    gap: 6px 10px;
+  }
+
+  .om-contact-footer .om-footer-phone-link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .om-contact-footer .om-footer-logo-card {
+    padding: 12px 18px;
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .om-contact-footer .om-footer-logo-img {
+    height: 48px;
+    max-width: 100%;
+  }
+
+  .om-contact-footer .om-footer-phones-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .om-contact-footer .om-footer-phone-divider {
+    display: none;
+  }
+}
+
+
