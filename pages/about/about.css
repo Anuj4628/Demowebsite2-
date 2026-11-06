@@ -56,6 +56,42 @@
   border-left-color: var(--color-brand-red, #D71920);
 }
 
+/* Badge Group & Establishment Pill */
+.om-about-badge-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.om-about-badge-group .om-about-badge {
+  margin-bottom: 0;
+}
+
+.om-about-est-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--color-primary-navy, #073B78);
+  background-color: #FFFFFF;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1.5px solid #E2E8F0;
+  box-shadow: 0 2px 8px rgba(7, 59, 120, 0.06);
+  line-height: 1;
+}
+
+.om-about-est-pill .om-est-icon {
+  width: 14px;
+  height: 14px;
+  color: var(--color-brand-red, #D71920);
+  flex-shrink: 0;
+}
+
 /* ==========================================================================
    1. ABOUT US HERO SECTION (RED & WHITE PROMINENT)
    ========================================================================== */
@@ -688,6 +724,10 @@
   .om-about-hero-content {
     max-width: 100%;
     margin: 0 auto;
+  }
+
+  .om-about-badge-group {
+    justify-content: center;
   }
 
   .om-about-hero-actions {
