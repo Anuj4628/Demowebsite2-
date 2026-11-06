@@ -231,13 +231,13 @@ export const PRODUCTS = [
     id: 'water-sports-lifestyle',
     categorySlug: 'water-bottles',
     name: 'Sports & Lifestyle Aluminium Bottle',
-    shortDesc: 'Ergonomic water packaging bottle engineered for gym, travel, sports, and outdoor activities.',
+    shortDesc: 'Multi-colour aluminium sports bottles engineered for gym, athletic hydration, travel, and custom brand finishing.',
     sizes: ['500ml', '750ml'],
     image: 'assets/images/products/water-bottles/water-lifestyle.jpg',
     webp: 'assets/images/products/water-bottles/water-lifestyle.webp',
     material: 'BPA-Free Lined Aluminium',
-    finish: 'Brushed Aluminium',
-    closure: 'Flip-Up Sports Sipper Cap'
+    finish: 'Anodised Colour Lineup (Black, Blue, Silver, Red)',
+    closure: 'Carabiner Cap / Sports Stopper'
   },
 
   // 6. Dome Lights (8 verified products from Reference 2)
