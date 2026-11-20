@@ -45,6 +45,19 @@ export const CATEGORIES = [
     compatibleCaps: ['Standard Screw Cap', 'Octagonal Threaded Cap', 'Applicator Plug Cap', 'Tamper-Evident Cap']
   },
   {
+    id: 'conical-bottles',
+    name: 'Conical Aluminium Bottles',
+    headline: 'Conical Shoulder Aluminium Bottles',
+    slug: 'conical-bottles',
+    url: 'conical-bottles/index.html',
+    shortDesc: 'Precision conical shoulder aluminium bottles for smooth pouring and residue-free dispensing.',
+    longDesc: 'Engineered with sloped conical shoulders for ergonomic dispensing, minimal liquid retention, and zero evaporation. Ideal for laboratory reagents, solvents, agrochemicals, aromatic essences, and specialty chemical packaging.',
+    image: 'assets/images/products/conical-bottles.jpg',
+    webp: 'assets/images/products/conical-bottles.webp',
+    verifiedSizes: ['50ml', '100ml', '250ml', '500ml'],
+    compatibleCaps: ['Standard Threaded Aluminium Cap', 'Tamper-Evident Plug & Seal Cap', 'PTFE / Chemical Lined Cap']
+  },
+  {
     id: 'perfume-bottles',
     name: 'Perfume Bottles',
     headline: 'Perfume & Fragrance Bottles',
@@ -186,6 +199,32 @@ export const PRODUCTS = [
     material: 'Seamless Aluminium',
     finish: 'Glossy & Matte Color Finishes',
     closure: 'Wadded Seal Screw Cap'
+  },
+
+  // 3b. Conical Bottles
+  {
+    id: 'conical-standard',
+    categorySlug: 'conical-bottles',
+    name: 'Standard Conical Aluminium Bottle',
+    shortDesc: 'Classic sloped conical shoulder bottle with continuous precision threading for controlled pouring and minimal liquid retention.',
+    sizes: ['50ml', '100ml', '250ml', '500ml'],
+    image: 'assets/images/products/conical-bottles/conical-standard.jpg',
+    webp: 'assets/images/products/conical-bottles/conical-standard.webp',
+    material: 'Pure Grade Aluminium (99.7%)',
+    finish: 'Fine Brushed Silver Finish',
+    closure: 'Threaded Aluminium / Polymer Cap'
+  },
+  {
+    id: 'conical-lab',
+    categorySlug: 'conical-bottles',
+    name: 'Laboratory & Chemical Conical Flask Bottle',
+    shortDesc: 'High-barrier seamless conical vessel designed for volatile reagents, analytical standards, and specialized solvent storage.',
+    sizes: ['50ml', '100ml', '250ml', '500ml'],
+    image: 'assets/images/products/conical-bottles/conical-lab.jpg',
+    webp: 'assets/images/products/conical-bottles/conical-lab.webp',
+    material: 'Seamless Extruded Aluminium',
+    finish: 'Industrial Brushed / Anodized Exterior',
+    closure: 'Solvent Resistant Wadded Cap'
   },
 
   // 4. Perfume Bottles
@@ -406,6 +445,14 @@ export const APPLICATIONS = [
     targetCategory: 'attar-bottles',
     image: 'assets/images/industries/industry-attar.jpg',
     webp: 'assets/images/industries/industry-attar.webp'
+  },
+  {
+    id: 'conical-app',
+    title: 'Precision Chemical & Laboratory Fluids',
+    targetCategory: 'conical-bottles',
+    image: 'assets/images/industries/industry-conical.jpg',
+    webp: 'assets/images/industries/industry-conical.webp',
+    description: 'Conical shoulder bottles providing residue-free pouring, 100% light-blocking protection, and airtight containment for laboratory fluids and sensitive chemicals.'
   },
   {
     id: 'perfume-app',
