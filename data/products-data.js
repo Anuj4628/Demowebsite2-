@@ -33,16 +33,16 @@ export const CATEGORIES = [
   },
   {
     id: 'attar-bottles',
-    name: 'Attar Bottles',
-    headline: 'Attar & Traditional Fragrance Bottles',
+    name: 'Colorful Aluminium Bottles',
+    headline: 'Colorful & Anodized Aluminium Bottles',
     slug: 'attar-bottles',
     url: 'attar-bottles/index.html',
-    shortDesc: 'Aluminium bottle options for attar and traditional fragrance packaging.',
-    longDesc: 'Specially crafted aluminium bottles designed for concentrated aromatic oils, traditional ittar, and essential fragrances. Provides complete UV and oxidation shielding to preserve pure scents.',
+    shortDesc: 'Vibrant multi-color anodized and coated aluminium bottles for custom branding.',
+    longDesc: 'Vibrant multi-color anodized and powder-coated aluminium bottles in custom metallic finishes (blue, red, green, gold, silver) tailored for cosmetic brands, retail packaging, modern beverages, and personalized corporate branding.',
     image: 'assets/images/products/attar-bottles.jpg',
     webp: 'assets/images/products/attar-bottles.webp',
-    verifiedSizes: ['10ml', '25ml', '50ml', '100ml', '250ml', '500ml'],
-    compatibleCaps: ['Standard Screw Cap', 'Octagonal Threaded Cap', 'Applicator Plug Cap']
+    verifiedSizes: ['10ml', '25ml', '50ml', '100ml', '250ml', '500ml', '1000ml'],
+    compatibleCaps: ['Standard Screw Cap', 'Octagonal Threaded Cap', 'Applicator Plug Cap', 'Tamper-Evident Cap']
   },
   {
     id: 'perfume-bottles',
@@ -162,29 +162,29 @@ export const PRODUCTS = [
     closure: 'Heavy-Duty Threaded Cap'
   },
 
-  // 3. Attar Bottles
+  // 3. Colorful Aluminium Bottles
   {
     id: 'attar-standard',
     categorySlug: 'attar-bottles',
-    name: 'Traditional Attar Aluminium Bottle',
-    shortDesc: 'Classic compact aluminium bottle designed for pure ittar, sandalwood oils, and traditional scents.',
+    name: 'Vibrant Anodized Aluminium Bottle',
+    shortDesc: 'Vivid multi-color anodized aluminium bottles designed for premium retail, cosmetics, and branding.',
     sizes: ['10ml', '25ml', '50ml', '100ml', '250ml'],
     image: 'assets/images/products/attar-bottles/attar-standard.jpg',
     webp: 'assets/images/products/attar-bottles/attar-standard.webp',
     material: 'Pure Grade Aluminium',
-    finish: 'Brushed Metallic with Golden/Silver Neck Accent',
+    finish: 'Multi-Color Anodized (Blue, Red, Green, Gold, Silver)',
     closure: 'Airtight Threaded Cap'
   },
   {
     id: 'attar-essential-oil',
     categorySlug: 'attar-bottles',
-    name: 'Essential Oil Aluminium Packaging Bottle',
-    shortDesc: 'Light-blocking aluminium vessel ensuring zero aromatic decay or volatile evaporation.',
+    name: 'Custom Coated Aluminium Packaging Bottle',
+    shortDesc: 'High-durability color-coated aluminium container offering distinctive shelf appeal and total UV barrier.',
     sizes: ['25ml', '50ml', '100ml', '250ml', '500ml'],
     image: 'assets/images/products/attar-bottles/attar-traditional.jpg',
     webp: 'assets/images/products/attar-bottles/attar-traditional.webp',
     material: 'Seamless Aluminium',
-    finish: 'Natural Matte / Polished Silver',
+    finish: 'Glossy & Matte Color Finishes',
     closure: 'Wadded Seal Screw Cap'
   },
 
@@ -401,8 +401,8 @@ export const APPLICATIONS = [
   },
   {
     id: 'attar-app',
-    title: 'Attar & Traditional Fragrance',
-    desc: 'Airtight, non-reactive containers preserving the purity of traditional ittar and floral extracts.',
+    title: 'Colorful & Custom Packaging',
+    desc: 'Custom anodized and powder-coated colorful aluminium bottles for luxury retail, cosmetics, and modern beverages.',
     targetCategory: 'attar-bottles',
     image: 'assets/images/industries/industry-attar.jpg',
     webp: 'assets/images/industries/industry-attar.webp'
