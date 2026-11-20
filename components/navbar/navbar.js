@@ -15,6 +15,7 @@ export const NAVBAR_PRODUCT_CATEGORIES = [
   { name: 'Chemical Bottles', slug: 'chemical-bottles', path: 'chemical-bottles/index.html' },
   { name: 'Colorful Aluminium Bottles', slug: 'attar-bottles', path: 'attar-bottles/index.html' },
   { name: 'Conical Aluminium Bottles', slug: 'conical-bottles', path: 'conical-bottles/index.html' },
+  { name: 'Vitamin Liquid – Animal Healthcare', slug: 'veterinary-bottles', path: 'veterinary-bottles/index.html' },
   { name: 'Perfume Bottles', slug: 'perfume-bottles', path: 'perfume-bottles/index.html' },
   { name: 'Water Bottles', slug: 'water-bottles', path: 'water-bottles/index.html' },
   { name: 'Aluminium Dome Lights', slug: 'dome-lights', path: 'dome-lights/index.html' }

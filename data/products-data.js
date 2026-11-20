@@ -58,6 +58,19 @@ export const CATEGORIES = [
     compatibleCaps: ['Standard Threaded Aluminium Cap', 'Tamper-Evident Plug & Seal Cap', 'PTFE / Chemical Lined Cap']
   },
   {
+    id: 'veterinary-bottles',
+    name: 'Vitamin Liquid – Animal Healthcare',
+    headline: 'Animal Healthcare & Veterinary Liquid Packaging',
+    slug: 'veterinary-bottles',
+    url: 'veterinary-bottles/index.html',
+    shortDesc: 'High-barrier aluminium bottles for veterinary vitamin liquids, mineral supplements, and animal healthcare tonics.',
+    longDesc: 'Specialized high-barrier aluminium bottles engineered for animal healthcare, veterinary liquid vitamins, mineral supplements, and oral tonics. Seamless, tamper-evident, and 100% light-blocking to protect sensitive nutritional actives across dairy, livestock, poultry, and equine farming.',
+    image: 'assets/images/products/veterinary-bottles.jpg',
+    webp: 'assets/images/products/veterinary-bottles.webp',
+    verifiedSizes: ['50ml', '100ml', '250ml', '500ml', '1000ml', '2500ml'],
+    compatibleCaps: ['Tamper-Evident Ribbed Screw Cap', 'Wadded Anti-Leak Cap', 'Drenching & Pourer Insert']
+  },
+  {
     id: 'perfume-bottles',
     name: 'Perfume Bottles',
     headline: 'Perfume & Fragrance Bottles',
@@ -225,6 +238,32 @@ export const PRODUCTS = [
     material: 'Seamless Extruded Aluminium',
     finish: 'Industrial Brushed / Anodized Exterior',
     closure: 'Solvent Resistant Wadded Cap'
+  },
+
+  // 3c. Vitamin Liquid – Animal Healthcare
+  {
+    id: 'veterinary-standard',
+    categorySlug: 'veterinary-bottles',
+    name: 'Veterinary Liquid Vitamin Aluminium Bottle',
+    shortDesc: 'Seamless aluminium container with certified internal protective lacquer for veterinary vitamins and oral supplements.',
+    sizes: ['50ml', '100ml', '250ml', '500ml', '1000ml', '2500ml'],
+    image: 'assets/images/products/veterinary-bottles/veterinary-standard.jpg',
+    webp: 'assets/images/products/veterinary-bottles/veterinary-standard.webp',
+    material: 'Pure Grade Aluminium (99.7%)',
+    finish: 'Brushed Aluminium with Label Area',
+    closure: 'Tamper-Evident Ribbed Cap'
+  },
+  {
+    id: 'veterinary-feed',
+    categorySlug: 'veterinary-bottles',
+    name: 'Livestock & Poultry Tonic Packaging Bottle',
+    shortDesc: 'Heavy-gauge aluminium container with wide pour opening and secure wadded closure for dairy tonics and feed additives.',
+    sizes: ['100ml', '250ml', '500ml', '1000ml', '2500ml'],
+    image: 'assets/images/products/veterinary-bottles/veterinary-feed.jpg',
+    webp: 'assets/images/products/veterinary-bottles/veterinary-feed.webp',
+    material: 'Seamless Impact-Extruded Aluminium',
+    finish: 'Natural Brushed Silver Exterior',
+    closure: 'Anti-Leak Wadded Cap'
   },
 
   // 4. Perfume Bottles
@@ -453,6 +492,14 @@ export const APPLICATIONS = [
     image: 'assets/images/industries/industry-conical.jpg',
     webp: 'assets/images/industries/industry-conical.webp',
     description: 'Conical shoulder bottles providing residue-free pouring, 100% light-blocking protection, and airtight containment for laboratory fluids and sensitive chemicals.'
+  },
+  {
+    id: 'veterinary-app',
+    title: 'Animal Healthcare & Veterinary Formulations',
+    targetCategory: 'veterinary-bottles',
+    image: 'assets/images/industries/industry-veterinary.jpg',
+    webp: 'assets/images/industries/industry-veterinary.webp',
+    description: '100% light-blocking aluminium containers engineered for livestock vitamins, poultry oral supplements, and veterinary feed tonics.'
   },
   {
     id: 'perfume-app',

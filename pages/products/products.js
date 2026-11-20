@@ -119,6 +119,7 @@ function initProductDetailModal() {
                             window.location.pathname.includes('/chemical-bottles/') ||
                             window.location.pathname.includes('/attar-bottles/') ||
                             window.location.pathname.includes('/conical-bottles/') ||
+                            window.location.pathname.includes('/veterinary-bottles/') ||
                             window.location.pathname.includes('/perfume-bottles/') ||
                             window.location.pathname.includes('/water-bottles/') ||
                             window.location.pathname.includes('/dome-lights/');

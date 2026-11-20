@@ -16,6 +16,7 @@ export default defineConfig({
         chemicalBottles: resolve(__dirname, 'pages/products/chemical-bottles/index.html'),
         attarBottles: resolve(__dirname, 'pages/products/attar-bottles/index.html'),
         conicalBottles: resolve(__dirname, 'pages/products/conical-bottles/index.html'),
+        veterinaryBottles: resolve(__dirname, 'pages/products/veterinary-bottles/index.html'),
         perfumeBottles: resolve(__dirname, 'pages/products/perfume-bottles/index.html'),
         waterBottles: resolve(__dirname, 'pages/products/water-bottles/index.html'),
         domeLights: resolve(__dirname, 'pages/products/dome-lights/index.html'),
