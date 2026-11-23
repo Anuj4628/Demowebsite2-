@@ -359,44 +359,52 @@
   right: 28px;
 }
 
-/* Pagination Indicators */
+/* Pagination Indicators — Numbered 01 to 05 */
 .om-slider-pagination {
   position: absolute;
-  bottom: 28px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 24px;
+  left: 48px;
+  transform: none;
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 18px;
   z-index: 10;
-  background-color: rgba(7, 59, 120, 0.85);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  padding: 10px 20px;
-  border-radius: 28px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background-color: rgba(10, 22, 40, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 6px 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 .om-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  border-radius: 6px;
-  background-color: rgba(255, 255, 255, 0.45);
+  width: auto;
+  height: auto;
+  background: transparent;
   border: none;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
   cursor: pointer;
-  padding: 0;
-  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 3px 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: inherit;
+  transition: all 0.25s ease;
+  line-height: 1;
 }
 
 .om-pagination-bullet:hover {
-  background-color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .om-pagination-bullet.is-active {
-  width: 38px;
-  background-color: #D71920;
-  box-shadow: 0 2px 10px rgba(215, 25, 32, 0.6);
+  width: auto;
+  background: transparent;
+  color: #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+  box-shadow: none;
 }
 
 /* ==========================================================================
@@ -635,5 +643,336 @@
   .om-hero-container {
     padding: 0 12px;
     gap: 18px;
+  }
+}
+
+
+/* ==========================================================================
+   SLIDE 01 SPECIFIC STYLING — TRANSLUCENT DARK GLASS PANEL (REFERENCE DESIGN)
+   Strictly scoped to .om-slide-1 only. Does not affect any other slide.
+   ========================================================================== */
+.om-slide-1 {
+  position: relative;
+  background-color: #0A1628;
+}
+
+.om-slide-1 .om-slide1-bg-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.om-slide-1 .om-slide1-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.02);
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.om-slide-1.is-active .om-slide1-bg-img {
+  transform: scale(1);
+}
+
+.om-slide-1 .om-slide1-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(7, 24, 52, 0.72) 0%, rgba(7, 24, 52, 0.45) 55%, rgba(0, 0, 0, 0.2) 100%);
+  pointer-events: none;
+}
+
+.om-slide1-container {
+  grid-template-columns: 1fr !important;
+  display: flex !important;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+/* Translucent Dark Glass Panel (Matching Reference) */
+.om-slide1-glass-card {
+  position: relative;
+  max-width: 620px;
+  width: 100%;
+  padding: 38px 44px;
+  text-align: left;
+  background: rgba(10, 25, 48, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45),
+              inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 4;
+}
+
+.om-slide-1.is-active .om-slide1-glass-card {
+  animation: omSlide1FadeIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes omSlide1FadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.om-slide1-tag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #E5A93C;
+  text-transform: uppercase;
+}
+
+.om-slide1-tag .om-tag-line {
+  display: inline-block;
+  width: 22px;
+  height: 2px;
+  background-color: #E5A93C;
+}
+
+.om-slide1-title {
+  font-size: clamp(32px, 3.5vw, 50px);
+  font-weight: 850;
+  line-height: 1.1;
+  color: #FFFFFF;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.om-slide1-title .highlight-gold {
+  color: #E5A93C;
+  display: block;
+}
+
+.om-slide1-desc {
+  font-size: clamp(15px, 1.1vw, 17px);
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+.om-slide1-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.om-btn-slide1-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #0E6E55;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 13px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(14, 110, 85, 0.4);
+  transition: all 0.25s ease;
+}
+
+.om-btn-slide1-primary:hover {
+  background-color: #0A5542;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(14, 110, 85, 0.55);
+}
+
+.om-btn-slide1-primary svg {
+  width: 17px;
+  height: 17px;
+}
+
+.om-btn-slide1-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 13px 24px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  text-decoration: none;
+  backdrop-filter: blur(8px);
+  transition: all 0.25s ease;
+}
+
+.om-btn-slide1-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.22);
+  border-color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.om-btn-slide1-secondary svg {
+  width: 18px;
+  height: 18px;
+}
+
+.om-slide1-catalog-row {
+  margin-top: 2px;
+}
+
+.om-btn-slide1-catalog {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(229, 169, 60, 0.14);
+  border: 1px solid rgba(229, 169, 60, 0.45);
+  color: #FFFFFF;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  width: fit-content;
+}
+
+.om-btn-slide1-catalog:hover {
+  background: rgba(229, 169, 60, 0.28);
+  border-color: #E5A93C;
+  transform: translateY(-1px);
+}
+
+.om-btn-slide1-catalog .om-catalog-icon {
+  width: 17px;
+  height: 17px;
+  color: #E5A93C;
+}
+
+.om-btn-slide1-catalog .om-catalog-arrow {
+  width: 14px;
+  height: 14px;
+  color: #E5A93C;
+}
+
+.om-slide1-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 4px;
+}
+
+.om-slide1-meta .om-meta-dot {
+  color: #E5A93C;
+  font-size: 10px;
+}
+
+/* Slide 04 & Slide 05 Styles (Preserving Original Slide Aesthetics) */
+.om-slide-4 {
+  background: linear-gradient(115deg, #052A56 0%, #073B78 44%, #B81419 44.1%, #D71920 48%, #F3F6FA 48.1%, #FFFFFF 100%);
+}
+
+.om-slide-5 {
+  background: linear-gradient(115deg, #FFFFFF 0%, #F3F6FA 51.9%, #073B78 52%, #0B4A8B 55.9%, #D71920 56%, #B81419 100%);
+}
+
+@media (max-width: 1023px) {
+  .om-slide-1 {
+    background-color: #0A1628 !important;
+    background-image: none !important;
+  }
+  .om-slide1-container {
+    justify-content: flex-start;
+  }
+  .om-slide1-glass-card {
+    margin: 0 auto;
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .om-slide1-glass-card {
+    padding: 26px 20px;
+    gap: 13px;
+    border-radius: 10px;
+  }
+  .om-slide1-title {
+    font-size: clamp(24px, 6.2vw, 32px);
+    line-height: 1.15;
+  }
+  .om-slide1-desc {
+    font-size: 14.5px;
+    line-height: 1.5;
+  }
+  .om-slide1-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 10px;
+  }
+  .om-btn-slide1-primary,
+  .om-btn-slide1-secondary {
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    padding: 13px 20px;
+    font-size: 14px;
+  }
+  .om-slide1-catalog-row {
+    width: 100%;
+  }
+  .om-btn-slide1-catalog {
+    width: 100%;
+    justify-content: center;
+  }
+  .om-slider-pagination {
+    left: 16px;
+    bottom: 14px;
+    gap: 10px;
+    padding: 6px 14px;
+  }
+  .om-pagination-bullet {
+    font-size: 13px;
+    padding: 2px 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .om-slide1-glass-card {
+    padding: 20px 16px;
+    gap: 11px;
+  }
+  .om-slide1-tag {
+    font-size: 11.5px;
+    letter-spacing: 1px;
+  }
+  .om-slide1-meta {
+    font-size: 9.5px;
+    letter-spacing: 0.6px;
+    flex-wrap: wrap;
   }
 }
